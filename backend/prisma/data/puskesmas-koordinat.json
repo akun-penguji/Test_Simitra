@@ -1,0 +1,258 @@
+[
+ {
+  "kecamatan": "Setu",
+  "nama": "Setu I"
+ },
+ {
+  "kecamatan": "Setu",
+  "nama": "Setu II"
+ },
+ {
+  "kecamatan": "Setu",
+  "nama": "Setu III"
+ },
+ {
+  "kecamatan": "Serang Baru",
+  "nama": "Sirnajaya"
+ },
+ {
+  "kecamatan": "Serang Baru",
+  "nama": "Nagasari",
+  "lat": -6.416167,
+  "lng": 107.15357,
+  "sumber": "OpenStreetMap: Puskesmas Desa Nagasari, Jalan Raya Pasir Kupang, Nagasari, Kab Bekasi, Jawa Barat, Indonesia"
+ },
+ {
+  "kecamatan": "Cikarang Selatan",
+  "nama": "Sukadami"
+ },
+ {
+  "kecamatan": "Cikarang Selatan",
+  "nama": "Sukasejati"
+ },
+ {
+  "kecamatan": "Cikarang Selatan",
+  "nama": "Cibatu"
+ },
+ {
+  "kecamatan": "Cikarang Pusat",
+  "nama": "Sukamahi"
+ },
+ {
+  "kecamatan": "Cibarusah",
+  "nama": "Ridogalih"
+ },
+ {
+  "kecamatan": "Cibarusah",
+  "nama": "Cibarusah"
+ },
+ {
+  "kecamatan": "Bojongmangu",
+  "nama": "Karang Mulya"
+ },
+ {
+  "kecamatan": "Cikarang Timur",
+  "nama": "Lemah Abang"
+ },
+ {
+  "kecamatan": "Cikarang Timur",
+  "nama": "Cipayung"
+ },
+ {
+  "kecamatan": "Kedungwaringin",
+  "nama": "Kedung Waringin"
+ },
+ {
+  "kecamatan": "Kedungwaringin",
+  "nama": "Karang Sambung"
+ },
+ {
+  "kecamatan": "Karangbahagia",
+  "nama": "Karang Bahagia"
+ },
+ {
+  "kecamatan": "Karangbahagia",
+  "nama": "Sukaraya"
+ },
+ {
+  "kecamatan": "Karangbahagia",
+  "nama": "Karang Mukti"
+ },
+ {
+  "kecamatan": "Cikarang Utara",
+  "nama": "Cikarang",
+  "lat": -6.256542,
+  "lng": 107.156333,
+  "sumber": "OpenStreetMap: Puskesmas Cikarang, Jalan Ki Hajar Dewantara, Cikarang Kota, Cikarang, Kab Bekasi, Jawa Barat, 17383, Indonesia"
+ },
+ {
+  "kecamatan": "Cikarang Utara",
+  "nama": "Waluya"
+ },
+ {
+  "kecamatan": "Cikarang Utara",
+  "nama": "Mekar Mukti"
+ },
+ {
+  "kecamatan": "Cibitung",
+  "nama": "Wanasari",
+  "lat": -6.262693,
+  "lng": 107.081907,
+  "sumber": "OpenStreetMap: Puskesmas Wanasari, Jalan Teratai IV C, Cibitung, Mekarsari, Kab Bekasi, Jawa Barat, 17520, Indonesia"
+ },
+ {
+  "kecamatan": "Cibitung",
+  "nama": "Cibuntu"
+ },
+ {
+  "kecamatan": "Cibitung",
+  "nama": "Sukajaya"
+ },
+ {
+  "kecamatan": "Cibitung",
+  "nama": "Wanajaya",
+  "lat": -6.256336,
+  "lng": 107.095493,
+  "sumber": "OpenStreetMap: PUSKESMAS WANAJAYA, Jalan Telaga Asih, Cibitung, Telagaasih, Kab Bekasi, Jawa Barat, 17520, Indonesia"
+ },
+ {
+  "kecamatan": "Cikarang Barat",
+  "nama": "Danau Indah"
+ },
+ {
+  "kecamatan": "Cikarang Barat",
+  "nama": "Telaga Murni",
+  "lat": -6.270487,
+  "lng": 107.114682,
+  "sumber": "OpenStreetMap: Puskesmas Telaga Murni, Jalan Raya Imam Bonjol, Harjamekar, Kab Bekasi, Jawa Barat, 17383, Indonesia"
+ },
+ {
+  "kecamatan": "Cikarang Barat",
+  "nama": "Telaga Asih"
+ },
+ {
+  "kecamatan": "Tambun Selatan",
+  "nama": "Tambun",
+  "lat": -6.260392,
+  "lng": 107.054678,
+  "sumber": "OpenStreetMap: Puskesmas Tambun, Jalan Hasanuddin, Setiajaya, Kompas, Tambun, Kab Bekasi, Jawa Barat, 17510, Indonesia"
+ },
+ {
+  "kecamatan": "Tambun Selatan",
+  "nama": "Mekarsari"
+ },
+ {
+  "kecamatan": "Tambun Selatan",
+  "nama": "Jatimulya",
+  "lat": -6.268715,
+  "lng": 107.022753,
+  "sumber": "OpenStreetMap: Puskesmas Jatimulya, 500, Jalan Raya Jatimulya, Perum. Jatimulya Bekasi, Jatimulya, Lambangsari, Kab Bekasi, Jawa Barat, 17510, Indonesia"
+ },
+ {
+  "kecamatan": "Tambun Selatan",
+  "nama": "Mangunjaya"
+ },
+ {
+  "kecamatan": "Tambun Selatan",
+  "nama": "Sumber Jaya"
+ },
+ {
+  "kecamatan": "Tambun Selatan",
+  "nama": "Lambangsari"
+ },
+ {
+  "kecamatan": "Tambun Selatan",
+  "nama": "Setia Mekar"
+ },
+ {
+  "kecamatan": "Tambun Selatan",
+  "nama": "Tridayasakti"
+ },
+ {
+  "kecamatan": "Tambun Utara",
+  "nama": "Sri Mahi"
+ },
+ {
+  "kecamatan": "Tambun Utara",
+  "nama": "Sri Amur"
+ },
+ {
+  "kecamatan": "Tambun Utara",
+  "nama": "Karang Satria",
+  "lat": -6.222791,
+  "lng": 107.03604,
+  "sumber": "OpenStreetMap: Puskesmas Karangsatria, Jalan Karang Satria Raya, Karangsatria, Kab Bekasi, Jawa Barat, 17123, Indonesia"
+ },
+ {
+  "kecamatan": "Babelan",
+  "nama": "Babelan I"
+ },
+ {
+  "kecamatan": "Babelan",
+  "nama": "Babelan II"
+ },
+ {
+  "kecamatan": "Babelan",
+  "nama": "Bahagia",
+  "lat": -6.18999,
+  "lng": 107.024338,
+  "sumber": "OpenStreetMap: PUSKESMAS BAHAGIA, Jalan Lingkar Lapangan, Babelan, Kab Bekasi, Jawa Barat, 17125, Indonesia"
+ },
+ {
+  "kecamatan": "Tarumajaya",
+  "nama": "Taruma Jaya"
+ },
+ {
+  "kecamatan": "Tarumajaya",
+  "nama": "Setiamulya"
+ },
+ {
+  "kecamatan": "Tambelang",
+  "nama": "Tambelang"
+ },
+ {
+  "kecamatan": "Sukawangi",
+  "nama": "Suka Tenang"
+ },
+ {
+  "kecamatan": "Sukatani",
+  "nama": "Banjarsari"
+ },
+ {
+  "kecamatan": "Sukatani",
+  "nama": "Sukatani",
+  "lat": -6.171649,
+  "lng": 107.179084,
+  "sumber": "OpenStreetMap: Puskesmas Sukatani, Jalan Raya Sukatani, Kp. Srengseng Kaliabang, Sukadarma, Kab Bekasi, Jawa Barat, 17630, Indonesia"
+ },
+ {
+  "kecamatan": "Sukakarya",
+  "nama": "Sukaindah"
+ },
+ {
+  "kecamatan": "Pebayuran",
+  "nama": "Pebayuran",
+  "lat": -6.213421,
+  "lng": 107.282986,
+  "sumber": "OpenStreetMap: Puskesmas Kecamatan Pebayuran, Jalan Raya Pebayuran, Pebayuran, Kab Bekasi, Jawa Barat, 41352, Indonesia"
+ },
+ {
+  "kecamatan": "Pebayuran",
+  "nama": "Karang Reja"
+ },
+ {
+  "kecamatan": "Pebayuran",
+  "nama": "Karangharja",
+  "lat": -6.11521,
+  "lng": 107.266444,
+  "sumber": "OpenStreetMap: Puskesmas Karangharja, Jalan Raya Pebayuran, Sumbersari, Kab Bekasi, Jawa Barat, Indonesia"
+ },
+ {
+  "kecamatan": "Cabangbungin",
+  "nama": "Cabang Bungin"
+ },
+ {
+  "kecamatan": "Muaragembong",
+  "nama": "Muara Gembong"
+ }
+]

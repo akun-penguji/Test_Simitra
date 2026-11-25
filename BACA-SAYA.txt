@@ -1,0 +1,12 @@
+SIMITRA - Sistem Informasi Stratifikasi UKS/M Kabupaten Bekasi
+Kode sumber lengkap (tanpa node_modules dan hasil build; dibuat ulang dengan npm install).
+
+backend/  layanan (Node.js + Express + Prisma + PostgreSQL)
+web/      antarmuka (React + Vite)
+deploy/   docker-compose.yml (pemasangan dengan Docker)
+tools/    skrip pemasangan dan pemeriksaan
+
+Menjalankan secara lokal:
+  1. backend: npm install ; atur DATABASE_URL, JWT_SECRET, ENCRYPTION_KEY pada .env ; npm run push ; npm run seed ; npm start
+  2. web:     npm install ; npm run dev
+Pemasangan produksi: lihat deploy/docker-compose.yml (ganti kata sandi dan kunci sebelum dipakai).

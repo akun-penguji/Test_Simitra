@@ -1,0 +1,378 @@
+[
+ {
+  "nama": "TK NEGERI PEMBINA CIKARANG SELATAN",
+  "namaKunci": "tknpembina",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cikarang Selatan",
+  "tahun": 2023,
+  "peringkat": 1
+ },
+ {
+  "nama": "KB BAITUSSALAM BABELAN",
+  "namaKunci": "kbbaitussalam",
+  "jenjang": "TK/RA",
+  "kecamatan": "Babelan",
+  "tahun": 2023,
+  "peringkat": 2
+ },
+ {
+  "nama": "TK SYAFIRA CIBITUNG",
+  "namaKunci": "tksyafira",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cibitung",
+  "tahun": 2023,
+  "peringkat": 3
+ },
+ {
+  "nama": "SDN KERTAJAYA 01 PEBAYURAN",
+  "namaKunci": "sdnkertajaya01",
+  "jenjang": "SD/MI",
+  "kecamatan": "Pebayuran",
+  "tahun": 2023,
+  "peringkat": 1
+ },
+ {
+  "nama": "SDS IT PRESTASI CENDEKIA TAMBUN UTARA",
+  "namaKunci": "sdsitprestasicendekia",
+  "jenjang": "SD/MI",
+  "kecamatan": "Tambun Utara",
+  "tahun": 2023,
+  "peringkat": 2
+ },
+ {
+  "nama": "SDN CIBUNTU 01 CIBITUNG",
+  "namaKunci": "sdncibuntu01",
+  "jenjang": "SD/MI",
+  "kecamatan": "Cibitung",
+  "tahun": 2023,
+  "peringkat": 3
+ },
+ {
+  "nama": "SMPIT FITRAH HANNIAH CIBITUNG",
+  "namaKunci": "smpitfitrahhanniah",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Cibitung",
+  "tahun": 2023,
+  "peringkat": 1
+ },
+ {
+  "nama": "SMPN 1 CIBARUSAH",
+  "namaKunci": "smpn1",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Cibarusah",
+  "tahun": 2023,
+  "peringkat": 2
+ },
+ {
+  "nama": "MTs NURUL HUDA SETU",
+  "namaKunci": "mtsnurulhuda",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Setu",
+  "tahun": 2023,
+  "peringkat": 3
+ },
+ {
+  "nama": "SMAN 1 BOJONGMANGU",
+  "namaKunci": "sman1",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Bojongmangu",
+  "tahun": 2023,
+  "peringkat": 1
+ },
+ {
+  "nama": "SMK TELEKOMUNIKASI TELESANDI TAMBUN SELATAN",
+  "namaKunci": "smktelekomunikasitelesandi",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Tambun Selatan",
+  "tahun": 2023,
+  "peringkat": 2
+ },
+ {
+  "nama": "MAN 1 BEKASI CIKARANG UTARA",
+  "namaKunci": "man1bekasi",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Cikarang Utara",
+  "tahun": 2023,
+  "peringkat": 3
+ },
+ {
+  "nama": "TK ISLAM AL FAIRUZ CIKARANG TIMUR",
+  "namaKunci": "tkislamalfairuz",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cikarang Timur",
+  "tahun": 2024,
+  "peringkat": 1
+ },
+ {
+  "nama": "TK AL HUSNA ISLAMIS SCHOOL CIBITUNG",
+  "namaKunci": "tkalhusnaislamisschool",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cibitung",
+  "tahun": 2024,
+  "peringkat": 2
+ },
+ {
+  "nama": "TKIT ADAMS SCHOOL BABELAN",
+  "namaKunci": "tkitadamsschool",
+  "jenjang": "TK/RA",
+  "kecamatan": "Babelan",
+  "tahun": 2024,
+  "peringkat": 3
+ },
+ {
+  "nama": "SDS IT AN NAJMA CIKARANG UTARA",
+  "namaKunci": "sdsitannajma",
+  "jenjang": "SD/MI",
+  "kecamatan": "Cikarang Utara",
+  "tahun": 2024,
+  "peringkat": 1
+ },
+ {
+  "nama": "SDS MIDORI CIKARANG SELATAN",
+  "namaKunci": "sdsmidori",
+  "jenjang": "SD/MI",
+  "kecamatan": "Cikarang Selatan",
+  "tahun": 2024,
+  "peringkat": 2
+ },
+ {
+  "nama": "SDIT BUNYAN INDONESIA CIKARANG BARAT",
+  "namaKunci": "sditbunyanindonesia",
+  "jenjang": "SD/MI",
+  "kecamatan": "Cikarang Barat",
+  "tahun": 2024,
+  "peringkat": 3
+ },
+ {
+  "nama": "SMPIT PRESTASI CENDEKIA TAMBUN UTARA",
+  "namaKunci": "smpitprestasicendekia",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Tambun Utara",
+  "tahun": 2024,
+  "peringkat": 1
+ },
+ {
+  "nama": "SMPN 4 CIBITUNG",
+  "namaKunci": "smpn4",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Cibitung",
+  "tahun": 2024,
+  "peringkat": 2
+ },
+ {
+  "nama": "MTs NURUL IHSAN MUARAGEMBONG",
+  "namaKunci": "mtsnurulihsan",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Muaragembong",
+  "tahun": 2024,
+  "peringkat": 3
+ },
+ {
+  "nama": "MA PLUS ROUDHOTUL MUHIBBIN BEKASI CIBITUNG",
+  "namaKunci": "maplusroudhotulmuhibbinbekasi",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Cibitung",
+  "tahun": 2024,
+  "peringkat": 1
+ },
+ {
+  "nama": "SMAN 1 SUKATANI",
+  "namaKunci": "sman1",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Sukatani",
+  "tahun": 2024,
+  "peringkat": 2
+ },
+ {
+  "nama": "TKIT THARIQ BIN ZIYAD TAMBUN SELATAN",
+  "namaKunci": "tkitthariqbinziyad",
+  "jenjang": "TK/RA",
+  "kecamatan": "Tambun Selatan",
+  "tahun": 2025,
+  "peringkat": 1
+ },
+ {
+  "nama": "TKIT BAITUL 'AINI CIBITUNG",
+  "namaKunci": "tkitbaitulaini",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cibitung",
+  "tahun": 2025,
+  "peringkat": 2
+ },
+ {
+  "nama": "TKIT DARUL ADZKIYA CIBITUNG",
+  "namaKunci": "tkitdaruladzkiya",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cibitung",
+  "tahun": 2025,
+  "peringkat": 3
+ },
+ {
+  "nama": "SDIT INSAN TELADAN MANDIRI TAMBELANG",
+  "namaKunci": "sditinsanteladanmandiri",
+  "jenjang": "SD/MI",
+  "kecamatan": "Tambelang",
+  "tahun": 2025,
+  "peringkat": 1
+ },
+ {
+  "nama": "SD ISLAM AL-BAYANI CIKARANG UTARA",
+  "namaKunci": "sdislamalbayani",
+  "jenjang": "SD/MI",
+  "kecamatan": "Cikarang Utara",
+  "tahun": 2025,
+  "peringkat": 2
+ },
+ {
+  "nama": "SDN KARANGMULYA 01 BOJONGMANGU",
+  "namaKunci": "sdnkarangmulya01",
+  "jenjang": "SD/MI",
+  "kecamatan": "Bojongmangu",
+  "tahun": 2025,
+  "peringkat": 3
+ },
+ {
+  "nama": "SMPIT ANNUR CIKARANG TIMUR",
+  "namaKunci": "smpitannur",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Cikarang Timur",
+  "tahun": 2025,
+  "peringkat": 1
+ },
+ {
+  "nama": "SMPIT NURUL ILMI CIBARUSAH",
+  "namaKunci": "smpitnurulilmi",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Cibarusah",
+  "tahun": 2025,
+  "peringkat": 2
+ },
+ {
+  "nama": "SMPN 8 TAMBUN SELATAN TAMBUN SELATAN",
+  "namaKunci": "smpn8tambunselatan",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Tambun Selatan",
+  "tahun": 2025,
+  "peringkat": 3
+ },
+ {
+  "nama": "MA NURUL HUDA SETU",
+  "namaKunci": "manurulhuda",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Setu",
+  "tahun": 2025,
+  "peringkat": 1
+ },
+ {
+  "nama": "SMAN 2 CIKARANG SELATAN CIKARANG SELATAN",
+  "namaKunci": "sman2cikarangselatan",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Cikarang Selatan",
+  "tahun": 2025,
+  "peringkat": 2
+ },
+ {
+  "nama": "MA AL 'IMAROH CIKARANG BARAT",
+  "namaKunci": "maalimaroh",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Cikarang Barat",
+  "tahun": 2025,
+  "peringkat": 3
+ },
+ {
+  "nama": "RA MUATIARA INSAN CIBITUNG",
+  "namaKunci": "ramuatiarainsan",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cibitung",
+  "tahun": 2026,
+  "peringkat": 1
+ },
+ {
+  "nama": "TK ISLAM AT THOYBAH CIKARANG SELATAN",
+  "namaKunci": "tkislamatthoybah",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cikarang Selatan",
+  "tahun": 2026,
+  "peringkat": 2
+ },
+ {
+  "nama": "TKIT ULUL ALBAB CIBITUNG",
+  "namaKunci": "tkitululalbab",
+  "jenjang": "TK/RA",
+  "kecamatan": "Cibitung",
+  "tahun": 2026,
+  "peringkat": 3
+ },
+ {
+  "nama": "SDIT ISLAMIA TAMBUN SELATAN",
+  "namaKunci": "sditislamia",
+  "jenjang": "SD/MI",
+  "kecamatan": "Tambun Selatan",
+  "tahun": 2026,
+  "peringkat": 1
+ },
+ {
+  "nama": "SDIT AL HIDAYAH CIKARANG SELATAN",
+  "namaKunci": "sditalhidayah",
+  "jenjang": "SD/MI",
+  "kecamatan": "Cikarang Selatan",
+  "tahun": 2026,
+  "peringkat": 2
+ },
+ {
+  "nama": "SDN WANASARI 01CIBITUNG",
+  "namaKunci": "sdnwanasari01",
+  "jenjang": "SD/MI",
+  "kecamatan": "Cibitung",
+  "tahun": 2026,
+  "peringkat": 3
+ },
+ {
+  "nama": "SMP SANTO YOSEPH SETU",
+  "namaKunci": "smpsantoyoseph",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Setu",
+  "tahun": 2026,
+  "peringkat": 1
+ },
+ {
+  "nama": "SMPIT AL FAWWAZ CIKARANG PUSAT",
+  "namaKunci": "smpitalfawwaz",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Cikarang Pusat",
+  "tahun": 2026,
+  "peringkat": 2
+ },
+ {
+  "nama": "SMPIT THARIQ BIN ZIYAD TAMBUN SELATAN",
+  "namaKunci": "smpitthariqbinziyad",
+  "jenjang": "SMP/MTs",
+  "kecamatan": "Tambun Selatan",
+  "tahun": 2026,
+  "peringkat": 3
+ },
+ {
+  "nama": "SMAN 9 TAMBUN SELATAN",
+  "namaKunci": "sman9",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Tambun Selatan",
+  "tahun": 2026,
+  "peringkat": 1
+ },
+ {
+  "nama": "SMAIT ANNUR CIKARANG TIMUR",
+  "namaKunci": "smaitannur",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Cikarang Timur",
+  "tahun": 2026,
+  "peringkat": 2
+ },
+ {
+  "nama": "SMKN 1 CIKARANG PUSAT",
+  "namaKunci": "smkn1",
+  "jenjang": "SMA/SMK/MA",
+  "kecamatan": "Cikarang Pusat",
+  "tahun": 2026,
+  "peringkat": 3
+ }
+]

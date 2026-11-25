@@ -1,0 +1,193 @@
+{
+ "sumber": "dapo.kemendikdasmen.go.id/progres/020000/022200",
+ "kabupaten": "Kab. Bekasi",
+ "kodeWilayah": "022200",
+ "dataPer": "2026-09-02",
+ "totalSekolah": 3789,
+ "kecamatan": [
+  {
+   "kecamatan": "Muara Gembong",
+   "sekolah": 60,
+   "pesertaDidik": 7650,
+   "gtk": 596,
+   "sudahSinkron": 60,
+   "belumSinkron": 0
+  },
+  {
+   "kecamatan": "Bojong Mangu",
+   "sekolah": 44,
+   "pesertaDidik": 5106,
+   "gtk": 379,
+   "sudahSinkron": 44,
+   "belumSinkron": 0
+  },
+  {
+   "kecamatan": "Sukatani",
+   "sekolah": 91,
+   "pesertaDidik": 25004,
+   "gtk": 1269,
+   "sudahSinkron": 90,
+   "belumSinkron": 1
+  },
+  {
+   "kecamatan": "Sukawangi",
+   "sekolah": 78,
+   "pesertaDidik": 11257,
+   "gtk": 712,
+   "sudahSinkron": 77,
+   "belumSinkron": 1
+  },
+  {
+   "kecamatan": "Babelan",
+   "sekolah": 285,
+   "pesertaDidik": 57994,
+   "gtk": 3469,
+   "sudahSinkron": 281,
+   "belumSinkron": 4
+  },
+  {
+   "kecamatan": "Tambun Selatan",
+   "sekolah": 448,
+   "pesertaDidik": 99364,
+   "gtk": 6208,
+   "sudahSinkron": 441,
+   "belumSinkron": 7
+  },
+  {
+   "kecamatan": "Pebayuran",
+   "sekolah": 114,
+   "pesertaDidik": 21194,
+   "gtk": 1268,
+   "sudahSinkron": 112,
+   "belumSinkron": 2
+  },
+  {
+   "kecamatan": "Cikarang Timur",
+   "sekolah": 111,
+   "pesertaDidik": 19706,
+   "gtk": 1094,
+   "sudahSinkron": 109,
+   "belumSinkron": 2
+  },
+  {
+   "kecamatan": "Sukakarya",
+   "sekolah": 56,
+   "pesertaDidik": 9391,
+   "gtk": 566,
+   "sudahSinkron": 55,
+   "belumSinkron": 1
+  },
+  {
+   "kecamatan": "Cibitung",
+   "sekolah": 257,
+   "pesertaDidik": 46474,
+   "gtk": 2574,
+   "sudahSinkron": 252,
+   "belumSinkron": 5
+  },
+  {
+   "kecamatan": "Cikarang Pusat",
+   "sekolah": 105,
+   "pesertaDidik": 18674,
+   "gtk": 1135,
+   "sudahSinkron": 103,
+   "belumSinkron": 2
+  },
+  {
+   "kecamatan": "Cibarusah",
+   "sekolah": 149,
+   "pesertaDidik": 29698,
+   "gtk": 1633,
+   "sudahSinkron": 145,
+   "belumSinkron": 4
+  },
+  {
+   "kecamatan": "Cikarang Barat",
+   "sekolah": 223,
+   "pesertaDidik": 48290,
+   "gtk": 2748,
+   "sudahSinkron": 217,
+   "belumSinkron": 6
+  },
+  {
+   "kecamatan": "Tambelang",
+   "sekolah": 60,
+   "pesertaDidik": 10571,
+   "gtk": 664,
+   "sudahSinkron": 58,
+   "belumSinkron": 2
+  },
+  {
+   "kecamatan": "Serang Baru",
+   "sekolah": 204,
+   "pesertaDidik": 37748,
+   "gtk": 1991,
+   "sudahSinkron": 197,
+   "belumSinkron": 7
+  },
+  {
+   "kecamatan": "Setu",
+   "sekolah": 245,
+   "pesertaDidik": 41497,
+   "gtk": 2483,
+   "sudahSinkron": 236,
+   "belumSinkron": 9
+  },
+  {
+   "kecamatan": "Kedung Waringin",
+   "sekolah": 97,
+   "pesertaDidik": 18061,
+   "gtk": 919,
+   "sudahSinkron": 93,
+   "belumSinkron": 4
+  },
+  {
+   "kecamatan": "Cikarang Utara",
+   "sekolah": 293,
+   "pesertaDidik": 62953,
+   "gtk": 3517,
+   "sudahSinkron": 279,
+   "belumSinkron": 14
+  },
+  {
+   "kecamatan": "Taruma Jaya",
+   "sekolah": 180,
+   "pesertaDidik": 26939,
+   "gtk": 1776,
+   "sudahSinkron": 171,
+   "belumSinkron": 9
+  },
+  {
+   "kecamatan": "Karang Bahagia",
+   "sekolah": 136,
+   "pesertaDidik": 24880,
+   "gtk": 1402,
+   "sudahSinkron": 129,
+   "belumSinkron": 7
+  },
+  {
+   "kecamatan": "Cikarang Selatan",
+   "sekolah": 233,
+   "pesertaDidik": 47200,
+   "gtk": 2623,
+   "sudahSinkron": 221,
+   "belumSinkron": 12
+  },
+  {
+   "kecamatan": "Tambun Utara",
+   "sekolah": 208,
+   "pesertaDidik": 41213,
+   "gtk": 2420,
+   "sudahSinkron": 197,
+   "belumSinkron": 11
+  },
+  {
+   "kecamatan": "Cabangbungin",
+   "sekolah": 112,
+   "pesertaDidik": 12394,
+   "gtk": 911,
+   "sudahSinkron": 106,
+   "belumSinkron": 6
+  }
+ ]
+}

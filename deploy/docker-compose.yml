@@ -1,0 +1,52 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: simitra
+      POSTGRES_PASSWORD: simitra_prod_2026
+      POSTGRES_DB: simitra_db
+    volumes:
+      - simitra_db:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  backend:
+    build: ../backend
+    environment:
+      DATABASE_URL: "postgresql://simitra:simitra_prod_2026@db:5432/simitra_db?schema=public"
+      JWT_SECRET: "simitra-bekasi-prod-2026-9f3c7a1e6b2d8x4k-change-if-needed"
+      ENCRYPTION_KEY: "Oy70zQvxjQk/gWXtNA06SNX938E491EuciJivC/nMWKtfr7cpqcKRSEwbm4hW4ze"
+      PORT: "5020"
+      UPLOAD_DIR: "/app/uploads"
+    volumes:
+      - simitra_uploads:/app/uploads
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  web:
+    build: ../web
+    ports:
+      - "127.0.0.1:8102:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # Backup database otomatis harian (simpan 14 terakhir)
+  backup:
+    image: postgres:16
+    environment:
+      PGPASSWORD: simitra_prod_2026
+    volumes:
+      - simitra_backups:/backups
+    entrypoint:
+      - sh
+      - -c
+      - 'while true; do pg_dump -h db -U simitra simitra_db | gzip > /backups/simitra_$$(date +%Y%m%d_%H%M%S).sql.gz && echo "backup ok $$(date)"; ls -t /backups/*.sql.gz 2>/dev/null | tail -n +15 | xargs -r rm; sleep 86400; done'
+    depends_on:
+      - db
+    restart: unless-stopped
+
+volumes:
+  simitra_db:
+  simitra_uploads:
+  simitra_backups:

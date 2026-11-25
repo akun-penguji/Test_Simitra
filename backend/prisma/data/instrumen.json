@@ -1,0 +1,1218 @@
+{
+ "TK": [
+  {
+   "nama": "Pendidikan Kesehatan",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam Intrakulikuler",
+     "eviden": "Rencana Pelaksanaan Pembelajaran (RPP), Soal Ujian sekolah, muatan kurikulum di Kurikulum Satuan Pendidikan (KSP)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah melakukan kegiatan aksi hidup sehat ( makan sehat bersama dan bergizi, aktivitas fisik, CTPS dan kebersihan diri )",
+     "eviden": "Program 7 Kebiasaan Anak Indonesia Hebat (KAIH), rencana kegiatan UKS/M,Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan),Kebun Sekolah",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki sarana prasarana olahraga",
+     "eviden": "Daftar dan Foto alat-alat olahraga",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam ekstra kulikuler",
+     "eviden": "RPP, Foto kegiatan dan produk inovasi",
+     "strata": "MADYA"
+    },
+    {
+     "no": 6,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam ekstra kokulikuler",
+     "eviden": "RPP, Foto kegiatan dan foto Produk Inovasi",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah menerapkan pendidikan karakter dan keterampilan hidup sehat (dokumentasi pemantauan pendidikan karakter dan KHS)",
+     "eviden": "KSP, RPP, Program UKS/M, Foto, Pemilihan Duta Siswa ( misal sisawa ter-rajin, displin, berprestasi, kelas terbersih)",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Pelayanan Kesehatan",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memfasilitasi puskesmas melaksanakan Deteksi Dini Tumbuh Kembang",
+     "eviden": "RPP, surat dari puskesmas, Rekap Cek Kesehatan Gratis (CKG) dari Puseksmas",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah melaksanakan pelayanan P3K dan P3P ( pertolongan pertama pada penyakit)",
+     "eviden": "RPP, Daftar Obat UKS/M dan expirednya, Buku resgistrasi kunjungan, Foto",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memfasilitasi puskesmas melakukan vitamin A",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan), Rekap hasil pemberian Vitaman A nama siswa)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Sekolah memiliki ruang kesehatan / ruang UKS dengan peralatan dan perlengkapan ruang UKS)",
+     "eviden": "Foto Ruang UKS (Bed, panthom, Wastafel, penunjang pelayanan, Buku Pasien, Jadwal jaga, Form Rujukan, Termometer, Struktur Organisasi, Jadwal piket ruangan UKS, Rencana Kegiatan Tahunan dan Realisasinya, tempat sampah dan tissu)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah melaksanakan layanan konseling kesehatan yang dilaksanakan oleh Guru BK/ Wali Kelas/Guru Lainnya yang ditunjuk dan terlatih",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan) dan Buku registrasi",
+     "strata": "MADYA"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah bersama Puskesmas melakukan rujukan peserta didik yang sakit / cedera",
+     "eviden": "Buku Rujukan, Form Rujukan dan hasil rujukan",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah menindaklajuti hasil krining kesehatan",
+     "eviden": "Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan, hasil skrining) dan Hasil Tindak Lanjut",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah melaksanakan pelayanan P3LP ( Pertolongan Pertama pada luka psikologis)",
+     "eviden": "Foto kegiatan konseling, daftar nama konselor sebaya, foto kegiatan konselor sebaya, Buku Registrasi",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Pembinaan Lingkungan Sekolah Sehat",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memiliki sumber air layak dan cukup ( Tidak berasa, berbau dan berwarna, tersedia tempat penyimpanan yang tertutup)",
+     "eviden": "Foto penampungan air tertutup dan hasil uji Lab Air",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah memiliki tempat cuci tangan dengan sabun dan air mengalir",
+     "eviden": "Foto wastafel / keran cuci tangan dilengkapi sabun cuci tangan dan SOP Cuci tangan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah memiliki toilet dengan kondisi baik dan terpisah sesuai standar Permendikbudristek 22/2023 *",
+     "eviden": "Foto toilet terpisah, toilet disabilitas, toilet MKM",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki lahan / ruang terbuka hijau ( tidak becek, memiliki saluran penuntasan hujan)",
+     "eviden": "Foto ruang terbuka hijau, saluran air",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah memiliki tempat sampah permanen yang tertutup dan mudah dibersihkan di tiap kelas dan pembuangan sampah sementara yang tertutup",
+     "eviden": "Foto tempat sampah dikelas terpilah dan tertutup, Foto penampungan sampah sementara tertutup",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Ruang kelas dalam keadaan bersih (dari sampah dan debu) dan sehat (memiliki ventilasi udara dan pencahayaan yang memadai)",
+     "eviden": "Foto ruang kelas bersih dan berventilasi",
+     "strata": "DASAR"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah menerapkan kebijakan kawasan Tanpa Rokok dan NAPZA",
+     "eviden": "SK KTR dan Napza, kegiatan Anti Rokok dan Spanduk",
+     "strata": "DASAR"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah melaksanakan pemberantasan sarang nyamuk yang terjadwal 1 kali/minggu, melibatkan jumantik, tercatat dan terlaporkan",
+     "eviden": "Jadwal pemeberantasan nyamuk, daftar nama Jumantik, foto kegiatan dan pelaporan kegiatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah memiliki tempat sampah permanen yang tertutup dan terpilah di tiap kelas dan pembuangan sampah sementara yang tertutup dan terpilah",
+     "eviden": "Foto tempat sampah permanen dikelas terpilah dan tertutup, Foto penampungan sampah sementara tertutup dan terpilah",
+     "strata": "MADYA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah memiliki kantin sehat dan menjamin pangan sehat (makanan dalam keadaan tertutup, tidak kadaluarsa, terlindung dari debu, tempat pengolahan makanan memenuhi persyaratan kesehatan)",
+     "eviden": "Foto tempat pengolahan makanan di kantin, foto menyajian makanan di kantin, Stiker Kantin Sehat, Dokumentasi Pembinaan Kantin Sehat dan Raport",
+     "strata": "MADYA"
+    },
+    {
+     "no": 11,
+     "teks": "Sekolah memiliki saluran drainase permanen dan terbuka serta tersambung ke drainase umum dan tidak ada air yang mengenang di saluran drainase (kering/mengalir)",
+     "eviden": "Foto drainase permanen dan terbuka , kering /mengalir",
+     "strata": "MADYA"
+    },
+    {
+     "no": 12,
+     "teks": "Sekolah memanfaatkan pekarangan sekolah dengan menanam tanaman obat dan pangan",
+     "eviden": "Foto tanaman obat dan pangan di pekarangan sekolah",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 13,
+     "teks": "Sekolah melakukan 3R terhadap pengelolaan sampah (Reduce, reuse, recycle)",
+     "eviden": "Foto pengelolaan sampah 3R (Reduce,Reuse, Recycle)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 14,
+     "teks": "Sekolah menerapkan lingkungan inklusif bagi peserta didik dengan disabilitas",
+     "eviden": "Daftar anak inklusi, fasilitas belajar siswa disabilitas",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 15,
+     "teks": "Sekolah menerapkan kesiapsiagaan bencana (memilki jalur evakuasi, titik kumpul, alat pemadam)",
+     "eviden": "Foto jalur evakuasi, titik kumpul dan Alat Pemadam Api Ringan (APAR)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 16,
+     "teks": "Sekolah menyediakan air minum",
+     "eviden": "Foto tempat pengisian air minum di sekolah",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 17,
+     "teks": "Sekolah memiliki rasio toilet sesuai standar ( L40 : W 25)",
+     "eviden": "Foto toilet sesuai rasio",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 18,
+     "teks": "Kantin mendapat sertifikat kantin sehat",
+     "eviden": "Foto sertifikat/stiker kantin sehat",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 19,
+     "teks": "Tersedia toilet yang dapat diakses penyandang disabilitas",
+     "eviden": "Foto toilet disabilitas",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 20,
+     "teks": "Sekolah bekerja sama dengan puskesmas melakukan pemeriksaan Inspeksi Kesehatan Lingkungan (IKL)",
+     "eviden": "Raport Kesehatan Lingkungan dan Form IKL",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 21,
+     "teks": "Sekolah bekerjasama dengn pihak lain untuk menyediakan bank sampah",
+     "eviden": "Mou Bank Sampah, foto penampungan sampah sementara",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Tata Kelola dan Kepemimpinan Sekolah",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memiliki kebijakan tertulis tentang penyelenggaraan kesehatan sekolah termasuk SK (Surat Keputusan) Tim Pelaksana Kesehatan sekolah",
+     "eviden": "SK Pelaksana UKS/M satuan pendidikan, SK TP UKS/M kecamatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah memiliki rencana kerja kesehatan sekolah",
+     "eviden": "Rencana kegiatan UKS/M tahunan dilengkapi dengan realisasi kegiatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah mengalokasikan anggaran kesehatan sekolah",
+     "eviden": "Anggaran kegiatan UKS/M dalam Aplikasi Rencana Kegiatan dan Anggaran Sekolah (Arkas)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki sumber informasi terkait kesehatan sekolah",
+     "eviden": "Mou dengan puskesmas dan lembaga lainnya , Chanel informasi sekolah ( Instagram/Youtube)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah melaksanakan asesmen mandiri",
+     "eviden": "Hasil asesmen mandiri (aplikasi)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Sekolah melaksanakan koordinasi rutin dengan Tim Pembina UKS/M kecamatan termasuk puskesmas",
+     "eviden": "Dokumentasi rapat Tim Pelaksana UKS/M sekolah dengan TP UKS/M kecamatan termasuk puskesmas ( undangan, laporan hasil rapat, foto kegiatan, RTL)",
+     "strata": "MADYA"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah memiliki kemitraan dengan orang tua/komite sekolah",
+     "eviden": "SK Komite sekolah, dokumentasi kegiatan parenting ( undangan, laporan hasil rapat, foto kegiatan, RTL), Buku Raport Kesehatan, Buku Penghubung",
+     "strata": "MADYA"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah melakukan duta kesehatan sekolah / dokter kecil",
+     "eviden": "Data Duta Kesehatan sekolah/dokter kecil, dokumentasi pembinaan ( undangan, laporan kegiatan, foto)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah melaksanakan pencatatan dan pelaporan kegiatan UKS",
+     "eviden": "Dokumentasi realisasi kegiatan UKS/M (undangan, laporan hasil rapat, foto kegiatan, Rencana Tindak Lanjut ) per bulan",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah melaksanakan pemantauan dan evaluasi program UKS",
+     "eviden": "Dokumentasi rapat Tim Pelaksana UKS/M sekolah dengan TP UKS/M kecamatan termasuk puskesmas ( undangan, laporan hasil rapat, foto kegiatan dan Rencana Tindak Lanjut)",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 11,
+     "teks": "Sekolah melaksanakan orientasi kesehatan kepada semua pendidik dan tenaga kependidikan",
+     "eviden": "RPP, Dokumentasi rapat intern Tim Pelaksana UKS/M sekolah (undangan, laporan hasil rapat, foto kegiatan dan RTL )",
+     "strata": "PARIPURNA"
+    }
+   ]
+  }
+ ],
+ "SD": [
+  {
+   "nama": "Pendidikan Kesehatan",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam Intrakulikuler",
+     "eviden": "Rencana Pelaksanaan Pembelajaran (RPP), Soal Ujian sekolah, muatan kurikulum di Kurikulum Satuan Pendidikan (KSP)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah melakukan kegiatan aksi hidup sehat ( makan sehat bersama dan bergizi, aktivitas fisik, CTPS dan kebersihan diri )",
+     "eviden": "Program 7 Kebiasaan Anak Indonesia Hebat (KAIH), rencana kegiatan UKS/M,Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan),Kebun Sekolah",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki sarana prasarana olahraga",
+     "eviden": "Daftar dan Foto alat-alat olahraga",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam ekstra kulikuler",
+     "eviden": "RPP, Foto kegiatan dan produk inovasi",
+     "strata": "MADYA"
+    },
+    {
+     "no": 6,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam ekstra kokulikuler",
+     "eviden": "RPP, Foto kegiatan dan foto Produk Inovasi",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah menerapkan pendidikan karakter dan keterampilan hidup sehat (dokumentasi pemantauan pendidikan karakter dan KHS)",
+     "eviden": "KSP, RPP, Program UKS/M, Foto, Pemilihan Duta Siswa ( misal sisawa ter-rajin, displin, berprestasi, kelas terbersih)",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Pelayanan Kesehatan",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memfasilitasi puskesmas melaksanakan skrining kesehatan",
+     "eviden": "RPP, surat dari puskesmas, Rekap Cek Kesehatan Gratis (CKG) dari Puseksmas",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah melaksanakan pelayanan P3K dan P3P ( pertolongan pertama pada penyakit)",
+     "eviden": "RPP, Daftar Obat UKS/M dan expirednya, Buku resgistrasi kunjungan, Foto",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah memfasilitasi puskesmas melakukan imunisasi",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan), Rekap hasil imunisasi (nama siswa, jenis imunisasi)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memfasilitasi puskesmas melakukan vitamin A",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan), Rekap hasil pemberian Vitaman A nama siswa)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Sekolah memiliki ruang kesehatan / ruang UKS dengan peralatan dan perlengkapan ruang UKS)",
+     "eviden": "Foto Ruang UKS (Bed, panthom, Wastafel, penunjang pelayanan, Buku Pasien, Jadwal jaga, Form Rujukan, Termometer, Struktur Organisasi, Jadwal piket ruangan UKS, Rencana Kegiatan Tahunan dan Realisasinya, tempat sampah dan tissu)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah melaksanakan layanan konseling kesehatan yang dilaksanakan oleh Guru BK/ Wali Kelas/Guru Lainnya yang ditunjuk dan terlatih",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan) dan Buku registrasi",
+     "strata": "MADYA"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah bersama Puskesmas melakukan rujukan peserta didik yang sakit / cedera",
+     "eviden": "Buku Rujukan, Form Rujukan dan hasil rujukan",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah menindaklajuti hasil krining kesehatan",
+     "eviden": "Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan, hasil skrining) dan Hasil Tindak Lanjut",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah melaksanakan pelayanan P3LP ( Pertolongan Pertama pada luka psikologis)",
+     "eviden": "Foto kegiatan konseling, daftar nama konselor sebaya, foto kegiatan konselor sebaya, Buku Registrasi",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Pembinaan Lingkungan Sekolah Sehat",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memiliki sumber air layak dan cukup ( Tidak berasa, berbau dan berwarna, tersedia tempat penyimpanan yang tertutup)",
+     "eviden": "Foto penampungan air tertutup dan hasil uji Lab Air",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah memiliki tempat cuci tangan dengan sabun dan air mengalir",
+     "eviden": "Foto wastafel / keran cuci tangan dilengkapi sabun cuci tangan dan SOP Cuci tangan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah memiliki toilet dengan kondisi baik dan terpisah sesuai standar Permendikbudristek 22/2023 *",
+     "eviden": "Foto toilet terpisah, toilet disabilitas, toilet MKM",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki lahan / ruang terbuka hijau ( tidak becek, memiliki saluran penuntasan hujan)",
+     "eviden": "Foto ruang terbuka hijau, saluran air",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah memiliki tempat sampah permanen yang tertutup dan mudah dibersihkan di tiap kelas dan pembuangan sampah sementara yang tertutup",
+     "eviden": "Foto tempat sampah dikelas terpilah dan tertutup, Foto penampungan sampah sementara tertutup",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Ruang kelas dalam keadaan bersih (dari sampah dan debu) dan sehat (memiliki ventilasi udara dan pencahayaan yang memadai)",
+     "eviden": "Foto ruang kelas bersih dan berventilasi",
+     "strata": "DASAR"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah menerapkan kebijakan kawasan Tanpa Rokok dan NAPZA",
+     "eviden": "SK KTR dan Napza, kegiatan Anti Rokok dan Spanduk",
+     "strata": "DASAR"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah melaksanakan pemberantasan sarang nyamuk yang terjadwal 1 kali/minggu, melibatkan jumantik, tercatat dan terlaporkan",
+     "eviden": "Jadwal pemeberantasan nyamuk, daftar nama Jumantik, foto kegiatan dan pelaporan kegiatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah memiliki tempat sampah permanen yang tertutup dan terpilah di tiap kelas dan pembuangan sampah sementara yang tertutup dan terpilah",
+     "eviden": "Foto tempat sampah permanen dikelas terpilah dan tertutup, Foto penampungan sampah sementara tertutup dan terpilah",
+     "strata": "MADYA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah memiliki kantin sehat dan menjamin pangan sehat (makanan dalam keadaan tertutup, tidak kadaluarsa, terlindung dari debu, tempat pengolahan makanan memenuhi persyaratan kesehatan)",
+     "eviden": "Foto tempat pengolahan makanan di kantin, foto menyajian makanan di kantin, Stiker Kantin Sehat, Dokumentasi Pembinaan Kantin Sehat dan Raport",
+     "strata": "MADYA"
+    },
+    {
+     "no": 11,
+     "teks": "Sekolah memiliki saluran drainase permanen dan terbuka serta tersambung ke drainase umum dan tidak ada air yang mengenang di saluran drainase (kering/mengalir)",
+     "eviden": "Foto drainase permanen dan terbuka , kering /mengalir",
+     "strata": "MADYA"
+    },
+    {
+     "no": 12,
+     "teks": "Sekolah memanfaatkan pekarangan sekolah dengan menanam tanaman obat dan pangan",
+     "eviden": "Foto tanaman obat dan pangan di pekarangan sekolah",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 13,
+     "teks": "Sekolah melakukan 3R terhadap pengelolaan sampah (Reduce, reuse, recycle)",
+     "eviden": "Foto pengelolaan sampah 3R (Reduce,Reuse, Recycle)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 14,
+     "teks": "Sekolah menerapkan lingkungan inklusif bagi peserta didik dengan disabilitas",
+     "eviden": "Daftar anak inklusi, fasilitas belajar siswa disabilitas",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 15,
+     "teks": "Sekolah menerapkan kesiapsiagaan bencana (memilki jalur evakuasi, titik kumpul, alat pemadam)",
+     "eviden": "Foto jalur evakuasi, titik kumpul dan Alat Pemadam Api Ringan (APAR)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 16,
+     "teks": "Sekolah menyediakan air minum",
+     "eviden": "Foto tempat pengisian air minum di sekolah",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 17,
+     "teks": "Sekolah memiliki rasio toilet sesuai standar ( L40 : W 25)",
+     "eviden": "Foto toilet sesuai rasio",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 18,
+     "teks": "Kantin mendapat sertifikat kantin sehat",
+     "eviden": "Foto sertifikat/stiker kantin sehat",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 19,
+     "teks": "Tersedia toilet yang dapat diakses penyandang disabilitas",
+     "eviden": "Foto toilet disabilitas",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 20,
+     "teks": "Sekolah bekerja sama dengan puskesmas melakukan pemeriksaan Inspeksi Kesehatan Lingkungan (IKL)",
+     "eviden": "Raport Kesehatan Lingkungan dan Form IKL",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 21,
+     "teks": "Sekolah bekerjasama dengn pihak lain untuk menyediakan bank sampah",
+     "eviden": "Mou Bank Sampah, foto penampungan sampah sementara",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Tata Kelola dan Kepemimpinan Sekolah",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memiliki kebijakan tertulis tentang penyelenggaraan kesehatan sekolah termasuk SK (Surat Keputusan) Tim Pelaksana Kesehatan sekolah",
+     "eviden": "SK Pelaksana UKS/M satuan pendidikan, SK TP UKS/M kecamatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah memiliki rencana kerja kesehatan sekolah",
+     "eviden": "Rencana kegiatan UKS/M tahunan dilengkapi dengan realisasi kegiatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah mengalokasikan anggaran kesehatan sekolah",
+     "eviden": "Anggaran kegiatan UKS/M dalam Aplikasi Rencana Kegiatan dan Anggaran Sekolah (Arkas)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki sumber informasi terkait kesehatan sekolah",
+     "eviden": "Mou dengan puskesmas dan lembaga lainnya , Chanel informasi sekolah ( Instagram/Youtube)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah melaksanakan asesmen mandiri",
+     "eviden": "Hasil asesmen mandiri (aplikasi)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Sekolah melaksanakan koordinasi rutin dengan Tim Pembina UKS/M kecamatan termasuk puskesmas",
+     "eviden": "Dokumentasi rapat Tim Pelaksana UKS/M sekolah dengan TP UKS/M kecamatan termasuk puskesmas ( undangan, laporan hasil rapat, foto kegiatan, RTL)",
+     "strata": "MADYA"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah memiliki kemitraan dengan orang tua/komite sekolah",
+     "eviden": "SK Komite sekolah, dokumentasi kegiatan parenting ( undangan, laporan hasil rapat, foto kegiatan, RTL), Buku Raport Kesehatan, Buku Penghubung",
+     "strata": "MADYA"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah melakukan duta kesehatan sekolah / dokter kecil",
+     "eviden": "Data Duta Kesehatan sekolah/dokter kecil, dokumentasi pembinaan ( undangan, laporan kegiatan, foto)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah melaksanakan pencatatan dan pelaporan kegiatan UKS",
+     "eviden": "Dokumentasi realisasi kegiatan UKS/M (undangan, laporan hasil rapat, foto kegiatan, Rencana Tindak Lanjut ) per bulan",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah melaksanakan pemantauan dan evaluasi program UKS",
+     "eviden": "Dokumentasi rapat Tim Pelaksana UKS/M sekolah dengan TP UKS/M kecamatan termasuk puskesmas ( undangan, laporan hasil rapat, foto kegiatan dan Rencana Tindak Lanjut)",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 11,
+     "teks": "Sekolah melaksanakan orientasi kesehatan kepada semua pendidik dan tenaga kependidikan",
+     "eviden": "RPP, Dokumentasi rapat intern Tim Pelaksana UKS/M sekolah (undangan, laporan hasil rapat, foto kegiatan dan RTL )",
+     "strata": "PARIPURNA"
+    }
+   ]
+  }
+ ],
+ "SMP": [
+  {
+   "nama": "Pendidikan Kesehatan",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam Intrakulikuler",
+     "eviden": "Rencana Pelaksanaan Pembelajaran (RPP), Soal Ujian sekolah, muatan kurikulum di Kurikulum Satuan Pendidikan (KSP)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah melakukan kegiatan aksi hidup sehat ( makan sehat bersama dan bergizi, aktivitas fisik, CTPS dan kebersihan diri )",
+     "eviden": "Program 7 Kebiasaan Anak Indonesia Hebat (KAIH), rencana kegiatan UKS/M,Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan),Kebun Sekolah",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah melakukan kegiatan aksi Bergizi ( Senam pagi, sarapan bersama, minum Tablet Tambah Darah bagi Peserta Didik Putri, pendidikan gizi)",
+     "eviden": "Program 7 KAIH, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan), kerjasama dengan Dinkes/Puskesmas",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki sarana prasarana olahraga",
+     "eviden": "Daftar dan Foto alat-alat olahraga",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam ekstra kulikuler",
+     "eviden": "RPP, Foto kegiatan dan produk inovasi",
+     "strata": "MADYA"
+    },
+    {
+     "no": 6,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam ekstra kokulikuler",
+     "eviden": "RPP, Foto kegiatan dan foto Produk Inovasi",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah menerapkan pendidikan karakter dan keterampilan hidup sehat (dokumentasi pemantauan pendidikan karakter dan KHS)",
+     "eviden": "KSP, RPP, Program UKS/M, Foto, Pemilihan Duta Siswa ( misal sisawa ter-rajin, displin, berprestasi, kelas terbersih)",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Pelayanan Kesehatan",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memfasilitasi puskesmas melaksanakan skrining kesehatan",
+     "eviden": "RPP, surat dari puskesmas, Rekap Cek Kesehatan Gratis (CKG) dari Puseksmas",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah melaksanakan pelayanan P3K dan P3P ( pertolongan pertama pada penyakit)",
+     "eviden": "RPP, Daftar Obat UKS/M dan expirednya, Buku resgistrasi kunjungan, Foto",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah memfasilitasi puskesmas melakukan imunisasi",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan), Rekap hasil imunisasi (nama siswa, jenis imunisasi)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah melakukan pemberian Tablet Tambah Darah",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan), Rekap hasil pemberian TDD ( nama siswa)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Sekolah memiliki ruang kesehatan / ruang UKS dengan peralatan dan perlengkapan ruang UKS)",
+     "eviden": "Foto Ruang UKS (Bed, panthom, Wastafel, penunjang pelayanan, Buku Pasien, Jadwal jaga, Form Rujukan, Termometer, Struktur Organisasi, Jadwal piket ruangan UKS, Rencana Kegiatan Tahunan dan Realisasinya, tempat sampah dan tissu)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah melaksanakan layanan konseling kesehatan yang dilaksanakan oleh Guru BK/ Wali Kelas/Guru Lainnya yang ditunjuk dan terlatih",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan) dan Buku registrasi",
+     "strata": "MADYA"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah bersama Puskesmas melakukan rujukan peserta didik yang sakit / cedera",
+     "eviden": "Buku Rujukan, Form Rujukan dan hasil rujukan",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah menindaklajuti hasil krining kesehatan",
+     "eviden": "Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan, hasil skrining) dan Hasil Tindak Lanjut",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah melaksanakan pelayanan P3LP ( Pertolongan Pertama pada luka psikologis)",
+     "eviden": "Foto kegiatan konseling, daftar nama konselor sebaya, foto kegiatan konselor sebaya, Buku Registrasi",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Pembinaan Lingkungan Sekolah Sehat",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memiliki sumber air layak dan cukup ( Tidak berasa, berbau dan berwarna, tersedia tempat penyimpanan yang tertutup)",
+     "eviden": "Foto penampungan air tertutup dan hasil uji Lab Air",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah memiliki tempat cuci tangan dengan sabun dan air mengalir",
+     "eviden": "Foto wastafel / keran cuci tangan dilengkapi sabun cuci tangan dan SOP Cuci tangan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah memiliki toilet dengan kondisi baik dan terpisah sesuai standar Permendikbudristek 22/2023 *",
+     "eviden": "Foto toilet terpisah, toilet disabilitas, toilet MKM",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki lahan / ruang terbuka hijau ( tidak becek, memiliki saluran penuntasan hujan)",
+     "eviden": "Foto ruang terbuka hijau, saluran air",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah memiliki tempat sampah permanen yang tertutup dan mudah dibersihkan di tiap kelas dan pembuangan sampah sementara yang tertutup",
+     "eviden": "Foto tempat sampah dikelas terpilah dan tertutup, Foto penampungan sampah sementara tertutup",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Ruang kelas dalam keadaan bersih (dari sampah dan debu) dan sehat (memiliki ventilasi udara dan pencahayaan yang memadai)",
+     "eviden": "Foto ruang kelas bersih dan berventilasi",
+     "strata": "DASAR"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah menerapkan kebijakan kawasan Tanpa Rokok dan NAPZA",
+     "eviden": "SK KTR dan Napza, kegiatan Anti Rokok dan Spanduk",
+     "strata": "DASAR"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah melaksanakan pemberantasan sarang nyamuk yang terjadwal 1 kali/minggu, melibatkan jumantik, tercatat dan terlaporkan",
+     "eviden": "Jadwal pemeberantasan nyamuk, daftar nama Jumantik, foto kegiatan dan pelaporan kegiatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah memiliki tempat sampah permanen yang tertutup dan terpilah di tiap kelas dan pembuangan sampah sementara yang tertutup dan terpilah",
+     "eviden": "Foto tempat sampah permanen dikelas terpilah dan tertutup, Foto penampungan sampah sementara tertutup dan terpilah",
+     "strata": "MADYA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah memiliki kantin sehat dan menjamin pangan sehat (makanan dalam keadaan tertutup, tidak kadaluarsa, terlindung dari debu, tempat pengolahan makanan memenuhi persyaratan kesehatan)",
+     "eviden": "Foto tempat pengolahan makanan di kantin, foto menyajian makanan di kantin, Stiker Kantin Sehat, Dokumentasi Pembinaan Kantin Sehat dan Raport",
+     "strata": "MADYA"
+    },
+    {
+     "no": 11,
+     "teks": "Sekolah memiliki saluran drainase permanen dan terbuka serta tersambung ke drainase umum dan tidak ada air yang mengenang di saluran drainase (kering/mengalir)",
+     "eviden": "Foto drainase permanen dan terbuka , kering /mengalir",
+     "strata": "MADYA"
+    },
+    {
+     "no": 12,
+     "teks": "Sekolah memanfaatkan pekarangan sekolah dengan menanam tanaman obat dan pangan",
+     "eviden": "Foto tanaman obat dan pangan di pekarangan sekolah",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 13,
+     "teks": "Sekolah melakukan 3R terhadap pengelolaan sampah (Reduce, reuse, recycle)",
+     "eviden": "Foto pengelolaan sampah 3R (Reduce,Reuse, Recycle)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 14,
+     "teks": "Sekolah menerapkan lingkungan inklusif bagi peserta didik dengan disabilitas",
+     "eviden": "Daftar anak inklusi, fasilitas belajar siswa disabilitas",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 15,
+     "teks": "Sekolah menerapkan kesiapsiagaan bencana (memilki jalur evakuasi, titik kumpul, alat pemadam)",
+     "eviden": "Foto jalur evakuasi, titik kumpul dan Alat Pemadam Api Ringan (APAR)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 16,
+     "teks": "Sekolah menyediakan air minum",
+     "eviden": "Foto tempat pengisian air minum di sekolah",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 17,
+     "teks": "Sekolah memiliki rasio toilet sesuai standar ( L40 : W 25)",
+     "eviden": "Foto toilet sesuai rasio",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 18,
+     "teks": "Kantin mendapat sertifikat kantin sehat",
+     "eviden": "Foto sertifikat/stiker kantin sehat",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 19,
+     "teks": "Tersedia toilet yang dapat diakses penyandang disabilitas",
+     "eviden": "Foto toilet disabilitas",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 20,
+     "teks": "Sekolah bekerja sama dengan puskesmas melakukan pemeriksaan Inspeksi Kesehatan Lingkungan (IKL)",
+     "eviden": "Raport Kesehatan Lingkungan dan Form IKL",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 21,
+     "teks": "Sekolah bekerjasama dengn pihak lain untuk menyediakan bank sampah",
+     "eviden": "Mou Bank Sampah, foto penampungan sampah sementara",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Tata Kelola dan Kepemimpinan Sekolah",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memiliki kebijakan tertulis tentang penyelenggaraan kesehatan sekolah termasuk SK (Surat Keputusan) Tim Pelaksana Kesehatan sekolah",
+     "eviden": "SK Pelaksana UKS/M satuan pendidikan, SK TP UKS/M kecamatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah memiliki rencana kerja kesehatan sekolah",
+     "eviden": "Rencana kegiatan UKS/M tahunan dilengkapi dengan realisasi kegiatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah mengalokasikan anggaran kesehatan sekolah",
+     "eviden": "Anggaran kegiatan UKS/M dalam Aplikasi Rencana Kegiatan dan Anggaran Sekolah (Arkas)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki sumber informasi terkait kesehatan sekolah",
+     "eviden": "Mou dengan puskesmas dan lembaga lainnya , Chanel informasi sekolah ( Instagram/Youtube)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah melaksanakan asesmen mandiri",
+     "eviden": "Hasil asesmen mandiri (aplikasi)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Sekolah melaksanakan koordinasi rutin dengan Tim Pembina UKS/M kecamatan termasuk puskesmas",
+     "eviden": "Dokumentasi rapat Tim Pelaksana UKS/M sekolah dengan TP UKS/M kecamatan termasuk puskesmas ( undangan, laporan hasil rapat, foto kegiatan, RTL)",
+     "strata": "MADYA"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah memiliki kemitraan dengan orang tua/komite sekolah",
+     "eviden": "SK Komite sekolah, dokumentasi kegiatan parenting ( undangan, laporan hasil rapat, foto kegiatan, RTL), Buku Raport Kesehatan, Buku Penghubung",
+     "strata": "MADYA"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah melakukan duta kesehatan sekolah / dokter kecil",
+     "eviden": "Data Duta Kesehatan sekolah/dokter kecil, dokumentasi pembinaan ( undangan, laporan kegiatan, foto)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah melaksanakan pencatatan dan pelaporan kegiatan UKS",
+     "eviden": "Dokumentasi realisasi kegiatan UKS/M (undangan, laporan hasil rapat, foto kegiatan, Rencana Tindak Lanjut ) per bulan",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah melaksanakan pemantauan dan evaluasi program UKS",
+     "eviden": "Dokumentasi rapat Tim Pelaksana UKS/M sekolah dengan TP UKS/M kecamatan termasuk puskesmas ( undangan, laporan hasil rapat, foto kegiatan dan Rencana Tindak Lanjut)",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 11,
+     "teks": "Sekolah melaksanakan orientasi kesehatan kepada semua pendidik dan tenaga kependidikan",
+     "eviden": "RPP, Dokumentasi rapat intern Tim Pelaksana UKS/M sekolah (undangan, laporan hasil rapat, foto kegiatan dan RTL )",
+     "strata": "PARIPURNA"
+    }
+   ]
+  }
+ ],
+ "SMA": [
+  {
+   "nama": "Pendidikan Kesehatan",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam Intrakulikuler",
+     "eviden": "Rencana Pelaksanaan Pembelajaran (RPP), Soal Ujian sekolah, muatan kurikulum di Kurikulum Satuan Pendidikan (KSP)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah melakukan kegiatan aksi hidup sehat ( makan sehat bersama dan bergizi, aktivitas fisik, CTPS dan kebersihan diri )",
+     "eviden": "Program 7 Kebiasaan Anak Indonesia Hebat (KAIH), rencana kegiatan UKS/M,Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan),Kebun Sekolah",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah melakukan kegiatan aksi Bergizi ( Senam pagi, sarapan bersama, minum Tablet Tambah Darah bagi Peserta Didik Putri, pendidikan gizi)",
+     "eviden": "Program 7 KAIH, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan), kerjasama dengan Dinkes/Puskesmas",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki sarana prasarana olahraga",
+     "eviden": "Daftar dan Foto alat-alat olahraga",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam ekstra kulikuler",
+     "eviden": "RPP, Foto kegiatan dan produk inovasi",
+     "strata": "MADYA"
+    },
+    {
+     "no": 6,
+     "teks": "Pendidikan Kesehatan diintegrasikan dalam ekstra kokulikuler",
+     "eviden": "RPP, Foto kegiatan dan foto Produk Inovasi",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah menerapkan pendidikan karakter dan keterampilan hidup sehat (dokumentasi pemantauan pendidikan karakter dan KHS)",
+     "eviden": "KSP, RPP, Program UKS/M, Foto, Pemilihan Duta Siswa ( misal sisawa ter-rajin, displin, berprestasi, kelas terbersih)",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Pelayanan Kesehatan",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memfasilitasi puskesmas melaksanakan skrining kesehatan",
+     "eviden": "RPP, surat dari puskesmas, Rekap Cek Kesehatan Gratis (CKG) dari Puseksmas",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah melaksanakan pelayanan P3K dan P3P ( pertolongan pertama pada penyakit)",
+     "eviden": "RPP, Daftar Obat UKS/M dan expirednya, Buku resgistrasi kunjungan, Foto",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah melakukan pemberian Tablet Tambah Darah",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan), Rekap hasil pemberian TDD ( nama siswa)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Sekolah memiliki ruang kesehatan / ruang UKS dengan peralatan dan perlengkapan ruang UKS)",
+     "eviden": "Foto Ruang UKS (Bed, panthom, Wastafel, penunjang pelayanan, Buku Pasien, Jadwal jaga, Form Rujukan, Termometer, Struktur Organisasi, Jadwal piket ruangan UKS, Rencana Kegiatan Tahunan dan Realisasinya, tempat sampah dan tissu)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah melaksanakan layanan konseling kesehatan yang dilaksanakan oleh Guru BK/ Wali Kelas/Guru Lainnya yang ditunjuk dan terlatih",
+     "eviden": "RPP, Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan) dan Buku registrasi",
+     "strata": "MADYA"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah bersama Puskesmas melakukan rujukan peserta didik yang sakit / cedera",
+     "eviden": "Buku Rujukan, Form Rujukan dan hasil rujukan",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah menindaklajuti hasil krining kesehatan",
+     "eviden": "Dokumentasi kegiatan (Undangan/pemberitahuan, jadwal , foto kegiatan, hasil skrining) dan Hasil Tindak Lanjut",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah melaksanakan pelayanan P3LP ( Pertolongan Pertama pada luka psikologis)",
+     "eviden": "Foto kegiatan konseling, daftar nama konselor sebaya, foto kegiatan konselor sebaya, Buku Registrasi",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Pembinaan Lingkungan Sekolah Sehat",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memiliki sumber air layak dan cukup ( Tidak berasa, berbau dan berwarna, tersedia tempat penyimpanan yang tertutup)",
+     "eviden": "Foto penampungan air tertutup dan hasil uji Lab Air",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah memiliki tempat cuci tangan dengan sabun dan air mengalir",
+     "eviden": "Foto wastafel / keran cuci tangan dilengkapi sabun cuci tangan dan SOP Cuci tangan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah memiliki toilet dengan kondisi baik dan terpisah sesuai standar Permendikbudristek 22/2023 *",
+     "eviden": "Foto toilet terpisah, toilet disabilitas, toilet MKM",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki lahan / ruang terbuka hijau ( tidak becek, memiliki saluran penuntasan hujan)",
+     "eviden": "Foto ruang terbuka hijau, saluran air",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah memiliki tempat sampah permanen yang tertutup dan mudah dibersihkan di tiap kelas dan pembuangan sampah sementara yang tertutup",
+     "eviden": "Foto tempat sampah dikelas terpilah dan tertutup, Foto penampungan sampah sementara tertutup",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Ruang kelas dalam keadaan bersih (dari sampah dan debu) dan sehat (memiliki ventilasi udara dan pencahayaan yang memadai)",
+     "eviden": "Foto ruang kelas bersih dan berventilasi",
+     "strata": "DASAR"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah menerapkan kebijakan kawasan Tanpa Rokok dan NAPZA",
+     "eviden": "SK KTR dan Napza, kegiatan Anti Rokok dan Spanduk",
+     "strata": "DASAR"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah melaksanakan pemberantasan sarang nyamuk yang terjadwal 1 kali/minggu, melibatkan jumantik, tercatat dan terlaporkan",
+     "eviden": "Jadwal pemeberantasan nyamuk, daftar nama Jumantik, foto kegiatan dan pelaporan kegiatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah memiliki tempat sampah permanen yang tertutup dan terpilah di tiap kelas dan pembuangan sampah sementara yang tertutup dan terpilah",
+     "eviden": "Foto tempat sampah permanen dikelas terpilah dan tertutup, Foto penampungan sampah sementara tertutup dan terpilah",
+     "strata": "MADYA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah memiliki kantin sehat dan menjamin pangan sehat (makanan dalam keadaan tertutup, tidak kadaluarsa, terlindung dari debu, tempat pengolahan makanan memenuhi persyaratan kesehatan)",
+     "eviden": "Foto tempat pengolahan makanan di kantin, foto menyajian makanan di kantin, Stiker Kantin Sehat, Dokumentasi Pembinaan Kantin Sehat dan Raport",
+     "strata": "MADYA"
+    },
+    {
+     "no": 11,
+     "teks": "Sekolah memiliki saluran drainase permanen dan terbuka serta tersambung ke drainase umum dan tidak ada air yang mengenang di saluran drainase (kering/mengalir)",
+     "eviden": "Foto drainase permanen dan terbuka , kering /mengalir",
+     "strata": "MADYA"
+    },
+    {
+     "no": 12,
+     "teks": "Sekolah memanfaatkan pekarangan sekolah dengan menanam tanaman obat dan pangan",
+     "eviden": "Foto tanaman obat dan pangan di pekarangan sekolah",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 13,
+     "teks": "Sekolah melakukan 3R terhadap pengelolaan sampah (Reduce, reuse, recycle)",
+     "eviden": "Foto pengelolaan sampah 3R (Reduce,Reuse, Recycle)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 14,
+     "teks": "Sekolah menerapkan lingkungan inklusif bagi peserta didik dengan disabilitas",
+     "eviden": "Daftar anak inklusi, fasilitas belajar siswa disabilitas",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 15,
+     "teks": "Sekolah menerapkan kesiapsiagaan bencana (memilki jalur evakuasi, titik kumpul, alat pemadam)",
+     "eviden": "Foto jalur evakuasi, titik kumpul dan Alat Pemadam Api Ringan (APAR)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 16,
+     "teks": "Sekolah menyediakan air minum",
+     "eviden": "Foto tempat pengisian air minum di sekolah",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 17,
+     "teks": "Sekolah memiliki rasio toilet sesuai standar ( L40 : W 25)",
+     "eviden": "Foto toilet sesuai rasio",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 18,
+     "teks": "Kantin mendapat sertifikat kantin sehat",
+     "eviden": "Foto sertifikat/stiker kantin sehat",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 19,
+     "teks": "Tersedia toilet yang dapat diakses penyandang disabilitas",
+     "eviden": "Foto toilet disabilitas",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 20,
+     "teks": "Sekolah bekerja sama dengan puskesmas melakukan pemeriksaan Inspeksi Kesehatan Lingkungan (IKL)",
+     "eviden": "Raport Kesehatan Lingkungan dan Form IKL",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 21,
+     "teks": "Sekolah bekerjasama dengn pihak lain untuk menyediakan bank sampah",
+     "eviden": "Mou Bank Sampah, foto penampungan sampah sementara",
+     "strata": "PARIPURNA"
+    }
+   ]
+  },
+  {
+   "nama": "Tata Kelola dan Kepemimpinan Sekolah",
+   "indikator": [
+    {
+     "no": 1,
+     "teks": "Sekolah memiliki kebijakan tertulis tentang penyelenggaraan kesehatan sekolah termasuk SK (Surat Keputusan) Tim Pelaksana Kesehatan sekolah",
+     "eviden": "SK Pelaksana UKS/M satuan pendidikan, SK TP UKS/M kecamatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 2,
+     "teks": "Sekolah memiliki rencana kerja kesehatan sekolah",
+     "eviden": "Rencana kegiatan UKS/M tahunan dilengkapi dengan realisasi kegiatan",
+     "strata": "DASAR"
+    },
+    {
+     "no": 3,
+     "teks": "Sekolah mengalokasikan anggaran kesehatan sekolah",
+     "eviden": "Anggaran kegiatan UKS/M dalam Aplikasi Rencana Kegiatan dan Anggaran Sekolah (Arkas)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 4,
+     "teks": "Sekolah memiliki sumber informasi terkait kesehatan sekolah",
+     "eviden": "Mou dengan puskesmas dan lembaga lainnya , Chanel informasi sekolah ( Instagram/Youtube)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 5,
+     "teks": "Sekolah melaksanakan asesmen mandiri",
+     "eviden": "Hasil asesmen mandiri (aplikasi)",
+     "strata": "DASAR"
+    },
+    {
+     "no": 6,
+     "teks": "Sekolah melaksanakan koordinasi rutin dengan Tim Pembina UKS/M kecamatan termasuk puskesmas",
+     "eviden": "Dokumentasi rapat Tim Pelaksana UKS/M sekolah dengan TP UKS/M kecamatan termasuk puskesmas ( undangan, laporan hasil rapat, foto kegiatan, RTL)",
+     "strata": "MADYA"
+    },
+    {
+     "no": 7,
+     "teks": "Sekolah memiliki kemitraan dengan orang tua/komite sekolah",
+     "eviden": "SK Komite sekolah, dokumentasi kegiatan parenting ( undangan, laporan hasil rapat, foto kegiatan, RTL), Buku Raport Kesehatan, Buku Penghubung",
+     "strata": "MADYA"
+    },
+    {
+     "no": 8,
+     "teks": "Sekolah melakukan duta kesehatan sekolah / dokter kecil",
+     "eviden": "Data Duta Kesehatan sekolah/dokter kecil, dokumentasi pembinaan ( undangan, laporan kegiatan, foto)",
+     "strata": "UTAMA"
+    },
+    {
+     "no": 9,
+     "teks": "Sekolah melaksanakan pencatatan dan pelaporan kegiatan UKS",
+     "eviden": "Dokumentasi realisasi kegiatan UKS/M (undangan, laporan hasil rapat, foto kegiatan, Rencana Tindak Lanjut ) per bulan",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 10,
+     "teks": "Sekolah melaksanakan pemantauan dan evaluasi program UKS",
+     "eviden": "Dokumentasi rapat Tim Pelaksana UKS/M sekolah dengan TP UKS/M kecamatan termasuk puskesmas ( undangan, laporan hasil rapat, foto kegiatan dan Rencana Tindak Lanjut)",
+     "strata": "PARIPURNA"
+    },
+    {
+     "no": 11,
+     "teks": "Sekolah melaksanakan orientasi kesehatan kepada semua pendidik dan tenaga kependidikan",
+     "eviden": "RPP, Dokumentasi rapat intern Tim Pelaksana UKS/M sekolah (undangan, laporan hasil rapat, foto kegiatan dan RTL )",
+     "strata": "PARIPURNA"
+    }
+   ]
+  }
+ ]
+}

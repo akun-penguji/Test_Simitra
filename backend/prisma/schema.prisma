@@ -1,0 +1,769 @@
+// Skema Aplikasi Stratifikasi UKS/M Kabupaten Bekasi
+// Mengikuti alur 16 langkah: registrasi -> penilaian mandiri -> verifikasi kecamatan
+// -> rekomendasi -> eviden -> review -> sertifikat -> seleksi -> kunjungan -> SK Bupati
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================
+// PERIODE STRATIFIKASI (master, dikelola admin)
+// ============================================================
+
+model Periode {
+  id         String    @id @default(cuid())
+  nama       String    @unique // mis. "Stratifikasi UKS/M 2026"
+  tahun      Int
+  aktif      Boolean   @default(false)
+  keterangan String?
+  mulai      DateTime?
+  selesai    DateTime?
+  createdAt  DateTime  @default(now())
+
+  penilaian          Penilaian[]
+  sertifikat         Sertifikat[]
+  piagamPeserta      PiagamPeserta[]
+  pendaftaranSeleksi PendaftaranSeleksi[]
+  hasilFinal         HasilFinal[]
+  skBupati           SKBupati[]
+  riwayatJuara       RiwayatJuara[]
+  rekomendasi        Rekomendasi[]
+  jadwal             JadwalTahap[]
+}
+
+// Jadwal tahapan program per periode — ditampilkan ke seluruh pengguna saat
+// program berjalan (notulen Sep 2026). Bersifat informasi, tidak mengunci proses.
+model JadwalTahap {
+  id         String   @id @default(cuid())
+  periodeId  String
+  periode    Periode  @relation(fields: [periodeId], references: [id], onDelete: Cascade)
+  nama       String
+  keterangan String?
+  pelaksana  String? // Satuan Pendidikan | TP Kecamatan | Tim Kabupaten
+  mulai      DateTime
+  selesai    DateTime
+  urutan     Int      @default(0)
+  createdAt  DateTime @default(now())
+
+  @@index([periodeId])
+}
+
+// Informasi & berita seputar Stratifikasi UKS/M Kabupaten Bekasi (notulen Sep 2026)
+model Berita {
+  id             String    @id @default(cuid())
+  judul          String
+  kategori       String    @default("INFORMASI") // INFORMASI | BERITA | KEGIATAN | PENGUMUMAN
+  ringkasan      String?
+  isi            String
+  gambar         String? // nama berkas di UPLOAD_DIR/berita
+  // lampiran PDF (mis. buku panduan) — disajikan lewat endpoint, bukan folder /uploads
+  lampiran       String? // nama berkas di UPLOAD_DIR/berita-pdf
+  lampiranNama   String? // nama asli berkas
+  lampiranUkuran Int?
+  terbit         Boolean   @default(false)
+  disematkan     Boolean   @default(false) // tampil paling atas
+  penulis        String?
+  terbitPada     DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@index([terbit, terbitPada])
+}
+
+// ============================================================
+// PENGGUNA & ORGANISASI
+// ============================================================
+
+enum Role {
+  SATUAN_PENDIDIKAN // sekolah/madrasah
+  TP_KECAMATAN // Tim Pembina UKS/M Kecamatan (isAdmin = koordinator kecamatan)
+  TIM_KABUPATEN // Tim Stratifikasi Kabupaten (juga admin)
+}
+
+model User {
+  id                 String            @id @default(cuid())
+  username           String            @unique
+  password           String
+  nama               String
+  email              String?
+  role               Role
+  isAdmin            Boolean           @default(false) // TIM_KABUPATEN: admin/koordinator · TP_KECAMATAN: koordinator kecamatan
+  aktif              Boolean           @default(true)
+  kecamatanId        String?
+  kecamatan          Kecamatan?        @relation(fields: [kecamatanId], references: [id])
+  satuanPendidikan   SatuanPendidikan?
+  notifikasi         Notification[]
+  klasifikasiPenilai PenilaiKomponen[]
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+}
+
+// Notifikasi in-app per pengguna
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  judul     String
+  pesan     String
+  tipe      String   @default("info") // info | success | warning
+  link      String?
+  satuanId  String?
+  dibaca    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId, dibaca])
+}
+
+model Kecamatan {
+  id               String              @id @default(cuid())
+  nama             String              @unique
+  kode             String?             @unique
+  // Acuan Dapodik (portal progres pengiriman) — dipakai menghitung cakupan
+  // pendaftaran SIMITRA terhadap jumlah sekolah sebenarnya di tiap kecamatan.
+  sekolahDapodik   Int?
+  pesertaDidik     Int?
+  gtk              Int?
+  dapodikPer       DateTime?
+  users            User[]
+  satuan           SatuanPendidikan[]
+  puskesmas        Puskesmas[]
+  referensi        SekolahReferensi[]
+  peraih           PeraihPenghargaan[]
+  suratRekomendasi SuratRekomendasi[]
+  createdAt        DateTime            @default(now())
+}
+
+// Master referensi sekolah (sumber Dapodikdasmen) — direktori resmi
+model SekolahReferensi {
+  id          String     @id @default(cuid())
+  npsn        String     @unique
+  nsm         String? // Nomor Statistik Madrasah (khusus RA/MI/MTs/MA)
+  nama        String
+  bp          String? // bentuk pendidikan (TK/SD/SMP/RA/MI/MTs/MA/…)
+  status      String? // Negeri / Swasta
+  alamat      String?
+  sumber      String? // DAPODIK | EMIS — asal data referensi
+  kecamatanId String?
+  kecamatan   Kecamatan? @relation(fields: [kecamatanId], references: [id])
+  jmlSiswa    Int?
+  rombel      Int?
+  createdAt   DateTime   @default(now())
+
+  @@index([bp])
+}
+
+// Puskesmas binaan — untuk rekap strata per puskesmas
+model Puskesmas {
+  id           String             @id @default(cuid())
+  nama         String             @unique
+  kecamatanId  String?
+  kecamatan    Kecamatan?         @relation(fields: [kecamatanId], references: [id])
+  // Lokasi puskesmas untuk Peta Puskesmas Binaan (notulen Sep 2026)
+  alamat       String?
+  latitude     Float?
+  longitude    Float?
+  sumberLokasi String? // asal koordinat: "OSM", "Manual (nama pengubah)"
+  satuan       SatuanPendidikan[]
+  createdAt    DateTime           @default(now())
+}
+
+enum Jenjang {
+  TK
+  SD
+  SMP
+  SMA
+  SMK
+  MI
+  MTS
+  MA
+}
+
+// Tahap alur proses per satuan pendidikan (state machine 16 langkah)
+enum TahapProses {
+  REGISTRASI // langkah 1: baru daftar, isi profil
+  PENILAIAN_MANDIRI // langkah 2: mengisi/submit penilaian mandiri
+  MENUNGGU_VERIFIKASI // menunggu verifikasi kecamatan (langkah 3-4)
+  HASIL_STRATA // langkah 5: menerima hasil strata penilaian mandiri
+  DIREKOMENDASIKAN // langkah 6: direkomendasikan kecamatan ke kabupaten
+  PENGISIAN_EVIDEN // langkah 7 & 9: mengisi/memperbaiki eviden
+  REVIEW_EVIDEN // langkah 8: eviden sedang direview kabupaten
+  EVIDEN_DISETUJUI // seluruh eviden disetujui
+  BERSERTIFIKAT // menerima Sertifikat Strata (jalur Sertifikasi Strata selesai)
+  TERDAFTAR_SELEKSI // didaftarkan kecamatan sebagai peserta Seleksi Penghargaan
+  SELEKSI_ADMINISTRASI // langkah 12: seleksi administrasi (scoring eviden)
+  KUNJUNGAN_LAPANGAN // langkah 13: peninjauan lapangan
+  FINAL // langkah 14-16: strata final & SK Bupati
+}
+
+model SatuanPendidikan {
+  id            String      @id @default(cuid())
+  userId        String      @unique
+  user          User        @relation(fields: [userId], references: [id])
+  npsn          String?     @unique
+  nama          String
+  jenjang       Jenjang
+  kecamatanId   String
+  kecamatan     Kecamatan   @relation(fields: [kecamatanId], references: [id])
+  puskesmasId   String?
+  puskesmas     Puskesmas?  @relation(fields: [puskesmasId], references: [id])
+  alamat        String?
+  latitude      Float?
+  longitude     Float?
+  kepalaSekolah String?
+  npkKepala     String?
+  telepon       String?
+  emailSekolah  String?
+  pembinaUks    String? // nama pembina/guru UKS
+  jumlahSiswa   Int?
+  jumlahGuru    Int?
+  profilLengkap Boolean     @default(false)
+  tahap         TahapProses @default(REGISTRASI)
+
+  penilaian          Penilaian[]
+  rekomendasi        Rekomendasi?
+  eviden             Eviden?
+  sertifikat         Sertifikat?
+  piagamPeserta      PiagamPeserta?
+  pendaftaranSeleksi PendaftaranSeleksi?
+  kunjungan          KunjunganLapangan?
+  hasilFinal         HasilFinal?
+  riwayatJuara       RiwayatJuara[]
+  peraih             PeraihPenghargaan[]
+  suratRekomendasi   SuratRekomendasi[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ============================================================
+// INSTRUMEN (template indikator penilaian & stratifikasi)
+// ============================================================
+
+model Komponen {
+  id         String               @id @default(cuid())
+  kode       String               @unique
+  nama       String // mis. Pendidikan Kesehatan
+  urutan     Int                  @default(0)
+  indikator  Indikator[]
+  penilai    PenilaiKomponen[]
+  verifikasi VerifikasiKomponen[]
+}
+
+// Klasifikasi penilai Tim Kabupaten: seorang penilai hanya berwenang menilai
+// komponen yang ditugaskan kepadanya (review eviden, seleksi administrasi,
+// dan peninjauan lapangan). Admin/koordinator berwenang atas seluruh komponen.
+model PenilaiKomponen {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  komponenId String
+  komponen   Komponen @relation(fields: [komponenId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+
+  @@unique([userId, komponenId])
+  @@index([userId])
+}
+
+model Indikator {
+  id               String             @id @default(cuid())
+  komponenId       String
+  komponen         Komponen           @relation(fields: [komponenId], references: [id], onDelete: Cascade)
+  kode             String             @unique
+  jenjang          String             @default("SD") // TK | SD | SMP | SMA (grup jenjang instrumen)
+  strata           Strata             @default(DASAR) @map("level") // tingkat strata indikator
+  pertanyaan       String
+  bentukEviden     String? // contoh bukti dukung yang diminta (dari instrumen resmi)
+  urutan           Int                @default(0)
+  bobot            Int                @default(1)
+  jawabanPenilaian JawabanPenilaian[]
+  evidenItems      EvidenItem[]
+
+  @@index([jenjang])
+}
+
+// ============================================================
+// LANGKAH 2-5: PENILAIAN MANDIRI + HASIL STRATA
+// ============================================================
+
+enum StatusPenilaian {
+  DRAFT
+  SUBMITTED // langkah 2: dikirim ke kecamatan & kabupaten
+  DIVERIFIKASI // langkah 4: sudah diverifikasi kecamatan
+}
+
+// Strata UKS/M: Minimal, Standar, Optimal, Paripurna
+// Strata UKS/M (penamaan 2026): Dasar, Madya, Utama, Paripurna.
+// @map dipertahankan agar nilai lama di basis data (MINIMAL/STANDAR/OPTIMAL)
+// tetap terbaca tanpa migrasi data — hanya penamaan di aplikasi yang berubah.
+enum Strata {
+  DASAR     @map("MINIMAL")
+  MADYA     @map("STANDAR")
+  UTAMA     @map("OPTIMAL")
+  PARIPURNA
+}
+
+model Penilaian {
+  id                   String           @id @default(cuid())
+  satuanId             String
+  satuan               SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  periodeId            String?
+  periode              Periode?         @relation(fields: [periodeId], references: [id])
+  status               StatusPenilaian  @default(DRAFT)
+  // skor & strata hasil penilaian mandiri (dihitung otomatis)
+  skorMandiri          Float?
+  strataMandiri        Strata?
+  // hasil verifikasi kecamatan (langkah 4)
+  skorVerifikasi       Float?
+  strataVerifikasi     Strata?
+  catatanVerifikasi    String?
+  verifikatorId        String?
+  submittedAt          DateTime?
+  verifiedAt           DateTime?
+  // pernyataan bahwa penilaian diisi sesuai fakta di lapangan (pop-up konfirmasi)
+  pernyataanMandiri    Boolean          @default(false)
+  pernyataanVerifikasi Boolean          @default(false)
+
+  jawaban            JawabanPenilaian[]
+  verifikasiKomponen VerifikasiKomponen[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// Verifikasi kecamatan per KOMPONEN (notulen Sep 2026): satu kecamatan dapat
+// memiliki beberapa penilai, masing-masing menilai komponen yang ditugaskan.
+// Koordinator kecamatan memfinalkan setelah komponen-komponen dinilai.
+model VerifikasiKomponen {
+  id              String    @id @default(cuid())
+  penilaianId     String
+  penilaian       Penilaian @relation(fields: [penilaianId], references: [id], onDelete: Cascade)
+  komponenId      String
+  komponen        Komponen  @relation(fields: [komponenId], references: [id], onDelete: Cascade)
+  userId          String?
+  namaPenilai     String
+  catatan         String?
+  pernyataanFakta Boolean   @default(false)
+  selesaiPada     DateTime  @default(now())
+
+  @@unique([penilaianId, komponenId])
+  @@index([penilaianId])
+}
+
+model JawabanPenilaian {
+  id               String            @id @default(cuid())
+  penilaianId      String
+  penilaian        Penilaian         @relation(fields: [penilaianId], references: [id], onDelete: Cascade)
+  indikatorId      String
+  indikator        Indikator         @relation(fields: [indikatorId], references: [id])
+  // nilai 0=Tidak ada, 1=Ada minimal, 2=Ada standar, 3=Ada optimal (skala placeholder)
+  nilaiMandiri     Int               @default(0)
+  // Pernyataan sekolah bahwa bukti dukung indikator ini tersedia. Wajib untuk
+  // setiap indikator yang dijawab Ya (notulen: jawaban Ya harus berbukti).
+  pernyataanEviden Boolean           @default(false)
+  // koreksi verifikator kecamatan
+  nilaiVerifikasi  Int?
+  catatan          String?
+  lampiran         LampiranJawaban[]
+
+  @@unique([penilaianId, indikatorId])
+}
+
+// Lampiran bukti OPSIONAL pada tahap penilaian mandiri: sekolah boleh langsung
+// menyertakan dokumen/foto/video atau tautan saat menjawab indikator. Berbeda
+// dari EvidenBerkas yang wajib pada tahap Eviden Stratifikasi setelah
+// direkomendasikan — lampiran ini tidak menghalangi pengiriman penilaian.
+model LampiranJawaban {
+  id           String           @id @default(cuid())
+  jawabanId    String
+  jawaban      JawabanPenilaian @relation(fields: [jawabanId], references: [id], onDelete: Cascade)
+  jenis        String           @default("BERKAS") // BERKAS | TAUTAN
+  filePath     String?
+  fileName     String?
+  fileUrl      String?
+  ukuran       Int?
+  mime         String?
+  diunggahOleh String?
+  createdAt    DateTime         @default(now())
+
+  @@index([jawabanId])
+}
+
+// ============================================================
+// LANGKAH 6: REKOMENDASI KECAMATAN (maks 8 sekolah)
+// ============================================================
+
+model Rekomendasi {
+  id                   String           @id @default(cuid())
+  satuanId             String           @unique
+  satuan               SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  kecamatanId          String
+  periodeId            String?
+  periode              Periode?         @relation(fields: [periodeId], references: [id])
+  peringkat            Int? // urutan rekomendasi dalam kecamatan
+  catatan              String?
+  direkomendasikanOleh String?
+  createdAt            DateTime         @default(now())
+}
+
+// ============================================================
+// LANGKAH 7-9: EVIDEN STRATIFIKASI + REVIEW KESESUAIAN
+// ============================================================
+
+enum StatusEviden {
+  DRAFT
+  DIAJUKAN // diajukan untuk review
+}
+
+model Eviden {
+  id                String           @id @default(cuid())
+  satuanId          String
+  satuan            SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  status            StatusEviden     @default(DRAFT)
+  // hasil seleksi administrasi (langkah 12)
+  skorSeleksi       Float?
+  lolosSeleksi      Boolean? // lolos ke tahap kunjungan lapangan
+  submittedAt       DateTime?
+  pernyataanSeleksi Boolean          @default(false) // konfirmasi penilaian seleksi sesuai fakta
+  items             EvidenItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([satuanId])
+}
+
+enum StatusReview {
+  BELUM_DIREVIEW
+  DISETUJUI
+  REVISI
+}
+
+model EvidenItem {
+  id               String       @id @default(cuid())
+  evidenId         String
+  eviden           Eviden       @relation(fields: [evidenId], references: [id], onDelete: Cascade)
+  indikatorId      String
+  indikator        Indikator    @relation(fields: [indikatorId], references: [id])
+  deskripsi        String? // penjelasan pemenuhan indikator
+  filePath         String? // dokumen bukti (pdf/jpg/jpeg/png/mp4)
+  fileName         String?
+  fileUrl          String? // alternatif: tautan (URL) bukti eksternal
+  // review kesesuaian kabupaten (langkah 8)
+  statusReview     StatusReview @default(BELUM_DIREVIEW)
+  catatanReview    String? // keterangan perbaikan bila revisi
+  reviewerId       String?
+  reviewedAt       DateTime?
+  // skor per indikator saat seleksi administrasi (langkah 12)
+  skor             Float?
+  skorOleh         String? // nama penilai yang memberi skor seleksi administrasi
+  // hasil validasi faktual kunjungan lapangan (langkah 13)
+  skorLapangan     Float?
+  catatanLapangan  String?
+  skorLapanganOleh String? // nama penilai yang memberi/merevisi nilai lapangan
+
+  berkas EvidenBerkas[]
+
+  @@unique([evidenId, indikatorId])
+}
+
+// Lampiran eviden: satu indikator dapat memiliki BANYAK berkas dan/atau tautan.
+// Berkas: PDF, Word, Excel, PowerPoint, gambar, dan video. Tautan: URL eksternal.
+model EvidenBerkas {
+  id           String     @id @default(cuid())
+  itemId       String
+  item         EvidenItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  jenis        String     @default("BERKAS") // BERKAS | TAUTAN
+  filePath     String? // nama berkas di penyimpanan
+  fileName     String? // nama asli saat diunggah
+  fileUrl      String? // untuk jenis TAUTAN
+  ukuran       Int? // byte
+  mime         String?
+  diunggahOleh String?
+  createdAt    DateTime   @default(now())
+
+  @@index([itemId])
+}
+
+// ============================================================
+// LANGKAH 10-11: SERTIFIKAT KEIKUTSERTAAN
+// ============================================================
+
+// Sertifikat Strata (jalur Sertifikasi Strata) — menyatakan strata resmi terverifikasi
+model Sertifikat {
+  id              String           @id @default(cuid())
+  satuanId        String           @unique
+  satuan          SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  nomor           String           @unique
+  strata          Strata? // strata yang disertifikasi
+  periodeId       String?
+  periode         Periode?         @relation(fields: [periodeId], references: [id])
+  perihal         String           @default("Sertifikat Kepesertaan Seleksi Penghargaan Stratifikasi UKS/M")
+  tanggal         DateTime         @default(now()) // tanggal penerbitan — diisi admin sebelum generate
+  tahun           Int? // tahun yang tercetak pada sertifikat — diisi admin sebelum generate
+  diterbitkanOleh String?
+  versiId         String? // versi penandatangan & templat yang berlaku saat diterbitkan
+  versi           VersiSertifikat? @relation(fields: [versiId], references: [id])
+  createdAt       DateTime         @default(now())
+}
+
+// Piagam Peserta Seleksi Penghargaan — untuk satdik hasil REKOMENDASI KECAMATAN (rapat final
+// Okt 2026). Terpisah dari Sertifikat (Piagam Penghargaan hasil Kunjungan & Hasil Pleno).
+model PiagamPeserta {
+  id              String           @id @default(cuid())
+  satuanId        String           @unique
+  satuan          SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  nomor           String           @unique
+  periodeId       String?
+  periode         Periode?         @relation(fields: [periodeId], references: [id])
+  tanggal         DateTime
+  tahun           Int
+  diterbitkanOleh String?
+  versiId         String?
+  versi           VersiSertifikat? @relation(fields: [versiId], references: [id])
+  createdAt       DateTime         @default(now())
+}
+
+// Pendaftaran peserta Seleksi Penghargaan (jalur terpisah dari Sertifikasi Strata)
+model PendaftaranSeleksi {
+  id              String           @id @default(cuid())
+  satuanId        String           @unique
+  satuan          SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  kecamatanId     String
+  nomorDaftar     String           @unique
+  periodeId       String?
+  periode         Periode?         @relation(fields: [periodeId], references: [id])
+  didaftarkanOleh String?
+  catatan         String?
+  createdAt       DateTime         @default(now())
+}
+
+// ============================================================
+// LANGKAH 13: KUNJUNGAN LAPANGAN
+// ============================================================
+
+model KunjunganLapangan {
+  id                String           @id @default(cuid())
+  satuanId          String           @unique
+  satuan            SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  tanggal           DateTime?
+  petugas           String?
+  temuan            String? // catatan temuan lapangan
+  selesai           Boolean          @default(false)
+  // Submit hasil verifikasi langsung dari lapangan oleh tim penilai
+  disubmitOleh      String? // nama penilai yang menyubmit
+  disubmitPada      DateTime?
+  pernyataanFakta   Boolean          @default(false) // konfirmasi dinilai sesuai fakta lapangan
+  latitude          Float? // titik lokasi saat submit (bukti kehadiran)
+  longitude         Float?
+  terkunci          Boolean          @default(false) // hasil terkunci setelah disubmit
+  // Penetapan Finalisasi Strata Akhir (hasil kunjungan lapangan)
+  strataAwal        Strata? // strata hasil sertifikasi sebelum kunjungan
+  strataAkhir       Strata? // strata yang ditetapkan setelah peninjauan lapangan
+  catatanAkhir      String? // dasar pertimbangan penetapan strata akhir
+  ditetapkanOleh    String?
+  ditetapkanPada    DateTime?
+  // Review Ulang: koreksi nilai lapangan yang nilainya seri, dengan jejak
+  reviewUlangOleh   String?
+  reviewUlangPada   DateTime?
+  reviewUlangAlasan String?
+  jumlahReviewUlang Int              @default(0)
+  // Revisi nilai lapangan oleh tim penilai setelah hasil disubmit
+  revisiOleh        String?
+  revisiPada        DateTime?
+  revisiAlasan      String?
+  jumlahRevisi      Int              @default(0)
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+}
+
+// ============================================================
+// LANGKAH 14-16: HASIL FINAL & SK BUPATI
+// ============================================================
+
+model HasilFinal {
+  id          String           @id @default(cuid())
+  satuanId    String           @unique
+  satuan      SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  skorFinal   Float
+  strataFinal Strata? // dihitung sistem dari nilai pleno; null = Belum Mencapai Dasar
+  peraih      Boolean          @default(false) // masuk 12 terbaik peraih penghargaan
+  peringkat   Int?
+  periodeId   String?
+  periode     Periode?         @relation(fields: [periodeId], references: [id])
+  skId        String?
+  sk          SKBupati?        @relation(fields: [skId], references: [id])
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+}
+
+// Riwayat juara 1/2/3 tingkat kabupaten — dicatat permanen saat hasil final
+// ditetapkan, dipakai untuk melarang penilaian mandiri pada periode berikutnya.
+model RiwayatJuara {
+  id        String           @id @default(cuid())
+  satuanId  String
+  satuan    SatuanPendidikan @relation(fields: [satuanId], references: [id], onDelete: Cascade)
+  periodeId String?
+  periode   Periode?         @relation(fields: [periodeId], references: [id])
+  tahun     Int
+  peringkat Int // 1, 2, atau 3
+  strata    Strata?
+  createdAt DateTime         @default(now())
+
+  @@unique([satuanId, periodeId])
+  @@index([satuanId])
+}
+
+// Daftar resmi peraih penghargaan Stratifikasi UKS/M tingkat kabupaten
+// (sumber: berkas Bagian Kesra "Daftar Sekolah Penghargaan Stratifikasi UKSM").
+// Menjadi dasar larangan penilaian mandiri bagi sekolah yang pernah juara —
+// termasuk sekolah yang BELUM memiliki akun. Saat sekolah tersebut mendaftar,
+// barisnya ditautkan otomatis lewat pencocokan nama + kecamatan.
+model PeraihPenghargaan {
+  id              String            @id @default(cuid())
+  nama            String // nama sebagaimana tertulis di berkas sumber
+  namaKunci       String // nama ternormalisasi (tanpa kecamatan) untuk pencocokan
+  jenjang         String // TK/RA · SD/MI · SMP/MTs · SMA/SMK/MA
+  kecamatanId     String?
+  kecamatan       Kecamatan?        @relation(fields: [kecamatanId], references: [id])
+  tahun           Int
+  peringkat       Int // 1 | 2 | 3
+  sumber          String?
+  // Larangan dapat dicabut per sekolah oleh Admin Kabupaten bila diperlukan.
+  berlakuLarangan Boolean           @default(true)
+  // strata akhir peraih — dipilih manual oleh Admin Kabupaten (rapat final Okt 2026)
+  strataAkhir     Strata?
+  catatan         String?
+  satuanId        String?
+  satuan          SatuanPendidikan? @relation(fields: [satuanId], references: [id])
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  @@index([satuanId])
+  @@index([namaKunci])
+  @@index([tahun])
+}
+
+model SKBupati {
+  id        String       @id @default(cuid())
+  nomor     String       @unique
+  tahun     Int
+  periodeId String?
+  periode   Periode?     @relation(fields: [periodeId], references: [id])
+  perihal   String       @default("Peraih Penghargaan Stratifikasi UKS/M Tingkat Kabupaten")
+  tanggal   DateTime     @default(now())
+  catatan   String?
+  hasil     HasilFinal[]
+  createdAt DateTime     @default(now())
+}
+
+// ============================================================
+// AUDIT LOG (jejak proses)
+// ============================================================
+
+// Log audit menyeluruh (setiap request). Field sensitif dienkripsi at-rest (AES-256-GCM).
+model AuditLog {
+  id         String   @id @default(cuid())
+  aktor      String? // nama pelaku (terenkripsi)
+  username   String? // username (terenkripsi)
+  role       String? // peran: SATUAN_PENDIDIKAN | TP_KECAMATAN | TIM_KABUPATEN | ANONIM
+  ip         String? // alamat IP (terenkripsi)
+  method     String? // GET/POST/PUT/DELETE
+  path       String? // URL/slug (terenkripsi)
+  aksi       String
+  entitas    String?
+  satuanId   String?
+  detail     String? // (terenkripsi)
+  statusCode Int?
+  userAgent  String? // (terenkripsi)
+  createdAt  DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([role])
+}
+
+// ============================================================
+// PENGATURAN PENOMORAN SURAT (dikelola Admin Tim Stratifikasi)
+// Pola memakai penanda {tahun} {bulan} {bulanRomawi} {urut}
+// contoh: SRT/UKSM-BKS/{tahun}/{urut}
+// ============================================================
+model PengaturanNomor {
+  id         String   @id @default(cuid())
+  jenis      String   @unique // SERTIFIKAT | SK_BUPATI | PENDAFTARAN_SELEKSI
+  nama       String // label yang ditampilkan di halaman pengaturan
+  pola       String
+  urutMulai  Int      @default(1)
+  digit      Int      @default(4)
+  contoh     String? // hasil render terakhir (bantuan tampilan)
+  diubahOleh String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+// ============================================================
+// HASIL PLENO, SERTIFIKAT KEPESERTAAN, SURAT REKOMENDASI (rapat akhir Okt 2026)
+// ============================================================
+
+// Penanda bahwa Hasil Pleno suatu periode sudah DIPROSES (dikunci). Selama ada,
+// hitung ulang / review ulang / revisi nilai lapangan ditolak sampai dibuka kembali.
+model ProsesPleno {
+  id               String    @id @default(cuid())
+  kunci            String    @unique // id periode, atau 'TANPA_PERIODE'
+  periodeId        String?
+  jumlahSatdik     Int
+  jumlahPeraih     Int
+  diprosesOleh     String
+  diprosesPada     DateTime  @default(now())
+  sertifikatPada   DateTime? // kapan sertifikat kepesertaan digenerate
+  sertifikatOleh   String?
+  jumlahSertifikat Int       @default(0)
+}
+
+// Penandatangan & templat sertifikat. Setiap perubahan membuat VERSI BARU supaya
+// sertifikat yang sudah terbit tidak ikut berubah ketika pejabat berganti.
+// Tanda tangan & templat disimpan di basis data (bukan di folder /uploads yang
+// dapat dibuka siapa saja) dan hanya disajikan lewat endpoint yang butuh login.
+model VersiSertifikat {
+  id                 String          @id @default(cuid())
+  namaPejabat        String
+  jabatan            String
+  nip                String?
+  kota               String          @default("Cikarang Pusat")
+  ttd                Bytes? // pindaian tanda tangan (PNG/JPG)
+  ttdMime            String?
+  templat            Bytes? // gambar latar Piagam Penghargaan (hasil Kunjungan & Pleno) — kosong = templat bawaan
+  templatMime        String?
+  templatPeserta     Bytes? // gambar latar Piagam Peserta (hasil Rekomendasi Kecamatan) — kosong = templat bawaan
+  templatPesertaMime String?
+  aktif              Boolean         @default(true)
+  dibuatOleh         String?
+  createdAt          DateTime        @default(now())
+  sertifikat         Sertifikat[]
+  piagamPeserta      PiagamPeserta[]
+}
+
+// Surat rekomendasi satuan pendidikan yang diunggah TP UKS/M Kecamatan.
+// Berkas disimpan di basis data; disajikan hanya lewat endpoint berotorisasi.
+model SuratRekomendasi {
+  id           String            @id @default(cuid())
+  kecamatanId  String
+  kecamatan    Kecamatan         @relation(fields: [kecamatanId], references: [id])
+  satuanId     String? // opsional: surat untuk satu sekolah tertentu
+  satuan       SatuanPendidikan? @relation(fields: [satuanId], references: [id], onDelete: SetNull)
+  periodeId    String?
+  nomorSurat   String?
+  tanggalSurat DateTime?
+  perihal      String?
+  namaBerkas   String
+  mime         String
+  ukuran       Int
+  isi          Bytes
+  diunggahOleh String
+  createdAt    DateTime          @default(now())
+
+  @@index([kecamatanId])
+}
